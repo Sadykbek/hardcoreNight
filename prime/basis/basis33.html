@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/basis/digits-strings/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Преобразование в целые числа на Python</title>
+</head>
+	<body id="top">
+		<div class="navbar">
+			<div class="nav_topics">
+			<a href="../../index.html"  id="basics">Основы</a>
+			<a href="../../index.html?scrollTo=1550">Списки</a>
+			<a href="../../index.html?scrollTo=2600">Кортежи</a>
+			<a href="../../index.html?scrollTo=3200">Срезы</a>
+			<a href="../../index.html?scrollTo=3800">Словари</a>
+			<a href="../../index.html?scrollTo=4750">Множества</a>
+			<a href="../../index.html?scrollTo=5650">Условия</a>
+			<a href="../../index.html?scrollTo=6550">Циклы</a>
+			<a href="../../index.html?scrollTo=7450">Многомерность</a>
+			<a href="../../index.html?scrollTo=7760">Стандартные функции</a>
+			<a href="../../index.html?scrollTo=8350">Время</a>
+			<a href="../../index.html?scrollTo=8950">Пользовательские функции</a>
+		</div>
+	  </div>
+		<div class="wrapper">
+			
+			<main class="main-content">
+				<h1>Строки с цифрами в Python</h1>
+				<div class="content">
+<p>
+	Пусть у нас есть строка, содержащая
+	только цифры:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">txt = '123' # строка с цифрами</code>
+</div>
+<p>
+	Давайте найдем, например, сумму первого и
+	второго ее символов:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">txt = '123'
+print(txt[0] + txt[1]) # выведет '12' - суммирует как строки</code>
+</div>
+<p>
+	Как вы видите, символы нашей строки также
+	являются строками и суммируются как строки.
+	Пусть мы хотим сложить их как числа.
+	Для этого к каждому символу строки применим
+	функцию <code class="code inline">int</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">txt = '123'
+print(int(txt[0]) + int(txt[1])) # выведет 3</code>
+</div>
+<div class="task">
+	<p>
+		Дана строка <code class="string inline">'12345'</code>. Найдите сумму
+		цифр этой строки.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана строка <code class="string inline">'2489'</code>. Отнимите от
+		третьего символа второй, а затем
+		умножьте результат на первый
+		символ.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="basis32.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="basis34.html"  target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>						<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/basis/digits-strings/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:23 GMT -->
+</html>
