@@ -262,9 +262,11 @@ main h1{
 
 .navbar a {
   color: white;
-  padding: 14px 20px;
+  padding: 10px 10px;
   text-decoration: none;
   text-align: center;
+  font-family:  Helvetica, sans-serif;
+  letter-spacing: 0.1em;
 }
 
 .navbar a:hover {
@@ -283,7 +285,7 @@ display: flex;
   top: 10px;
   right: 10px;
   background-color: rgb(255, 255, 255); /* Пример фона */
-  color: rgb(222, 49, 49); /* Цвет текста */
+  color: rgb(177, 177, 177); /* Цвет текста */
   padding: 5px; /* Небольшой отступ вокруг текста */
   font-size: 12px; /* Размер шрифта */
 }

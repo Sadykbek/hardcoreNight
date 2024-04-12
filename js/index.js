@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   tasks.forEach(task => {
     let hardcoreSpan = document.createElement('span');
     hardcoreSpan.classList.add('hardcore');
-    hardcoreSpan.textContent = 'hardcoreNight';
+    hardcoreSpan.textContent = 'HARDCODENIGHT';
     task.prepend(hardcoreSpan); // Добавляем span как первый элемент в .task
   });
 });
