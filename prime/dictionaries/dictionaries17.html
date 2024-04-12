@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/dictionaries/all-values-getting/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Получение всех значений из словаря в Python</title>
+</head>
+   <body id="top">
+      <div class="navbar">
+         <div class="nav_topics">
+         <a href="../../index.html"  id="basics">Основы</a>
+          <a href="../../index.html?scrollTo=1750">Списки</a>
+         <a href="../../index.html?scrollTo=3000">Кортежи</a>
+         <a href="../../index.html?scrollTo=3750">Срезы</a>
+         <a href="../../index.html?scrollTo=4350">Словари</a>
+         <a href="../../index.html?scrollTo=5400">Множества</a>
+         <a href="../../index.html?scrollTo=6500">Условия</a>
+         <a href="../../index.html?scrollTo=7500">Циклы</a>
+         <a href="../../index.html?scrollTo=8450">Многомерность</a>
+         <a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+         <a href="../../index.html?scrollTo=9450">Время</a>
+         <a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+      </div>
+      </div> 
+		<div class="wrapper">
+	
+			<main class="main-content">
+				<h1>Получение всех значений из словаря в Python</h1>
+				<div class="content">
+<p>
+	В Python можно также получить и все
+	значения из словаря. Для этого
+	используется метод <code class="code inline">values</code>.
+	В его параметр ничего не передается.
+	Возвращает метод специальный
+	объект <code class="code inline">dict_values</code>.
+</p>
+<p>
+	Пусть у нас есть следующий словарь:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	'a': 1,
+	'b': 2,
+	'c': 3
+}</code>
+</div>
+<p>
+	Давайте выведем из него
+	все значения:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = dct.values()
+print(res) # выведет dict_values([1, 2, 3])</code>
+</div>
+<p>
+	Для удобства работы с объектом <code class="code inline">dict_values</code>
+	можно преобразовать его в список.
+	Это делается с помощью
+	функции <code class="code inline">list</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = list(dct.values())
+print(res) # выведет [1, 2, 3]</code>
+</div>
+<div class="task">
+	<p>
+		Дан словарь:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	'x': 1,
+	'y': 2,
+	'z': 3
+}</code>
+	</div>
+	<p>
+		Получите все его значения.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан словарь:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	4: 'x',
+	2: 'y',
+	3: 'z',
+	4: 'w'
+}</code>
+	</div>
+	<p>
+		Получите все его значения.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан словарь:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	'x': 1,
+	'y': 2,
+	'z': 3
+}</code>
+	</div>
+	<p>
+		Получите список значений этого словаря.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Даны словари:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct1 = {
+	'a': 1,
+	'b': 2,
+	'c': 3
+}
+
+dct2 = {
+	1: 'a',
+	2: 'b',
+	3: 'c'
+}</code>
+	</div>
+	<p>
+		Получите их значения в следующем виде:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">[1, 2, 3, 'a', 'b', 'c']</code>
+	</div>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="dictionaries16.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="dictionaries18.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>	<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/dictionaries/all-values-getting/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+</html>

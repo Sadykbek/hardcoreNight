@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/dictionaries/keys-getting/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Получение всех ключей из словаря в Python</title>
+</head>
+   <body id="top">
+      <div class="navbar">
+         <div class="nav_topics">
+         <a href="../../index.html"  id="basics">Основы</a>
+          <a href="../../index.html?scrollTo=1750">Списки</a>
+         <a href="../../index.html?scrollTo=3000">Кортежи</a>
+         <a href="../../index.html?scrollTo=3750">Срезы</a>
+         <a href="../../index.html?scrollTo=4350">Словари</a>
+         <a href="../../index.html?scrollTo=5400">Множества</a>
+         <a href="../../index.html?scrollTo=6500">Условия</a>
+         <a href="../../index.html?scrollTo=7500">Циклы</a>
+         <a href="../../index.html?scrollTo=8450">Многомерность</a>
+         <a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+         <a href="../../index.html?scrollTo=9450">Время</a>
+         <a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+      </div>
+      </div> 
+		<div class="wrapper">
+		
+			<main>
+				<h1>Получение всех ключей из словаря в Python</h1>
+				<div class="content">
+<p>
+	Чтобы получить все ключи из словаря,
+	следует применить метод
+	<code class="code inline">keys</code>. В его параметре ничего
+	не указывается. Возвращает метод
+	специальный объект <code class="code inline">dict_keys</code>.
+</p>
+<p>
+	Пусть у нас есть следующий словарь:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	'a': 1,
+	'b': 2,
+	'c': 3
+}</code>
+</div>
+<p>
+	Давайте выведем все ключи из него:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = dct.keys()
+print(res) # выведет dict_keys(['a', 'b', 'c'])</code>
+</div>
+<p>
+	Для удобства работы с объектом <code class="code inline">dict_keys</code>
+	можно преобразовать его в список.
+	Это делается с помощью
+	функции <code class="code inline">list</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = list(dct.keys())
+print(res) # выведет ['a', 'b', 'c']</code>
+</div>
+<div class="task">
+	<p>
+		Дан словарь:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	'x': 1,
+	'y': 2,
+	'z': 3
+}</code>
+	</div>
+	<p>
+		Получите его ключи.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан словарь:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	1: 'x',
+	2: 'y',
+	3: 'z',
+	4: 'w'
+}</code>
+	</div>
+	<p>
+		Получите его ключи.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан словарь:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	'x': 1,
+	'y': 2,
+	'z': 3
+}</code>
+	</div>
+	<p>
+		Получите список ключей этого словаря.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан словарь:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	2: 'ab',
+	4: 'cd',
+	6: 'ef'
+}</code>
+	</div>
+	<p>
+		Получите произведение всех ключей
+		из данного словаря.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан словарь:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	1: 'x',
+	2: 'y',
+	3: 'z',
+	4: 'w'
+}</code>
+	</div>
+	<p>
+		Получите список ключей этого словаря
+		в следующем виде:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">[4, 3, 2, 1]</code>
+	</div>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="dictionaries15.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="dictionaries17.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>		<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/dictionaries/keys-getting/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/dictionaries/converting-to-dictionary/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Преобразование в словарь в Python</title>
+</head>
+   <body id="top">
+      <div class="navbar">
+         <div class="nav_topics">
+         <a href="../../index.html"  id="basics">Основы</a>
+          <a href="../../index.html?scrollTo=1750">Списки</a>
+         <a href="../../index.html?scrollTo=3000">Кортежи</a>
+         <a href="../../index.html?scrollTo=3750">Срезы</a>
+         <a href="../../index.html?scrollTo=4350">Словари</a>
+         <a href="../../index.html?scrollTo=5400">Множества</a>
+         <a href="../../index.html?scrollTo=6500">Условия</a>
+         <a href="../../index.html?scrollTo=7500">Циклы</a>
+         <a href="../../index.html?scrollTo=8450">Многомерность</a>
+         <a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+         <a href="../../index.html?scrollTo=9450">Время</a>
+         <a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+      </div>
+      </div> 
+		<div class="wrapper">
+		
+			<main class="main-content">
+				<h1>Преобразование в словарь в Python</h1>
+				<div class="content">
+<p>
+	Чтобы преобразовать
+	какой-либо объект в словарь,
+	нужно применить функцию <code class="code inline">dict</code>.
+	Однако не все типы данных
+	могут стать словарем. Давайте
+	попробуем преобразовать в словарь строку
+	и список:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">txt = '12345'
+dct = dict(txt) # выведет ошибку
+
+lst = ['1', '2', '3', '4', '5']
+dct = dict(lst) # выведет ошибку</code>
+</div>
+<p>
+	Это происходит из-за того,
+	что в объекте должны быть
+	парные значения. Теперь давайте из
+	вложенных списков создадим
+	словарь:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">lst = [['a', '1'], ['b', '2']]
+dct = dict(lst)
+
+print(dct) # выведет {'a': '1', 'b': '2'}</code>
+</div>
+<p>
+	Преобразовать в словарь можно
+	также и вложенные кортежи:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tlp = ((1, 'a'), (2, 'b'))
+dct = dict(tlp)
+
+print(dct) # выведет {1: 'a', 2: 'b'}</code>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = [[1, 'ab'], [2, 'cd'], [3, 'ef']]
+dct = dict(tst)
+
+print(dct)</code>
+	</div>
+	<p>
+		Скажите, что выведется в консоль.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = [('x', 2), ('y', 4), ('z', 6)]
+dct = dict(tst)
+
+print(dct)</code>
+	</div>
+	<p>
+		Скажите, что выведется в консоль.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = ['a', 'b', 'c', 'd']
+dct = dict(tst)
+
+print(dct)</code>
+	</div>
+	<p>
+		Скажите, что выведется в консоль.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = ('a', 1), ('b', 2), ('c', 3)
+dct = dict(tst)
+
+print(dct)</code>
+	</div>
+	<p>
+		Скажите, что выведется в консоль.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="dictionaries18.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="dictionaries20.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>			<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/dictionaries/converting-to-dictionary/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+</html>

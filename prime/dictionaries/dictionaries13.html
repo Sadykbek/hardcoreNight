@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/dictionaries/element-presence/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Наличие элемента в словаре в Python</title>
+</head>
+   <body id="top">
+      <div class="navbar">
+         <div class="nav_topics">
+         <a href="../../index.html"  id="basics">Основы</a>
+          <a href="../../index.html?scrollTo=1750">Списки</a>
+         <a href="../../index.html?scrollTo=3000">Кортежи</a>
+         <a href="../../index.html?scrollTo=3750">Срезы</a>
+         <a href="../../index.html?scrollTo=4350">Словари</a>
+         <a href="../../index.html?scrollTo=5400">Множества</a>
+         <a href="../../index.html?scrollTo=6500">Условия</a>
+         <a href="../../index.html?scrollTo=7500">Циклы</a>
+         <a href="../../index.html?scrollTo=8450">Многомерность</a>
+         <a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+         <a href="../../index.html?scrollTo=9450">Время</a>
+         <a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+      </div>
+      </div> 
+		<div class="wrapper">
+	
+			<main class="main-content">
+				<h1>Наличие элемента в словаре в Python</h1>
+				<div class="content">
+<p>
+	Проверить наличие ключа в словаре
+	можно с помощью оператора <code class="code inline">in</code>,
+	а отсутствие - с помощью <code class="code inline">not in</code>.
+</p>
+<p>
+	Посмотрим на практике. Пусть у нас
+	есть следующий словарь:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	'a': 1,
+	'b': 2,
+	'c': 3
+}</code>
+</div>
+<p>
+	Давайте проверим, есть ли в словаре
+	элемент с ключом <code class="string inline">'a'</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">print('a' in dct) # выведет True</code>
+</div>
+<p>
+	Давайте проверим, что в словаре
+	нет элемента с ключом <code class="string inline">'x'</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">print('x' not in dct) # выведет True</code>
+</div>
+<div class="task">
+	<p>
+		Дан словарь:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	'x': 1,
+	'y': 2,
+	'z': 3
+}</code>
+	</div>
+	<p>
+		Проверьте, есть ли в нем элемент
+		с ключом <code class="string inline">'w'</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	1: 'x',
+	2: 'y',
+	3: 'z',
+	4: 'w'
+}
+
+print('x' in dct)</code>
+	</div>
+	<p>
+		Скажите, что выведется в консоль.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	1: 'x',
+	2: 'y',
+	3: 'z',
+	4: 'w'
+}
+
+print('x' not in dct)</code>
+	</div>
+	<p>
+		Скажите, что выведется в консоль.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dct = {
+	1: 'x',
+	2: 'y',
+	3: 'z',
+	4: 'w'
+}
+
+print(3 in dct)</code>
+	</div>
+	<p>
+		Скажите, что выведется в консоль.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="dictionaries12.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="dictionaries14.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>		<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/dictionaries/element-presence/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+</html>
