@@ -304,3 +304,8 @@ display: flex;
   font-size: 40px;
   letter-spacing: 0.06em;
 }
+.code.inline{
+  color: #526094;
+  font-size: 21px;
+  font-weight: 600;
+}
