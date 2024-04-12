@@ -267,14 +267,12 @@ main h1{
   width: 85%;
   margin: 0 auto; /* Центрирование панели */
   background-color: #6a6e7b; /* Цвет фона панели */
-  height: 80px;
-  padding: 10px;
   border-radius: 5px;
 }
 
 .navbar a {
   color: white;
-  padding: 10px 10px;
+  padding: 20px 10px;
   text-decoration: none;
   text-align: center;
   font-family:  Helvetica, sans-serif;
@@ -283,7 +281,7 @@ main h1{
 }
 
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: #6767dF;
   color: black;
 }
 .nav_topics{
@@ -301,4 +299,8 @@ display: flex;
   color: rgb(177, 177, 177); /* Цвет текста */
   padding: 5px; /* Небольшой отступ вокруг текста */
   font-size: 12px; /* Размер шрифта */
+}
+.main-content h1{
+  font-size: 40px;
+  letter-spacing: 0.06em;
 }
