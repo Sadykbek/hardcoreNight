@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/sets/set-presence-sequence/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Наличие множества в последовательности в Python</title>
+</head>
+
+	<body id="top">
+	<div class="navbar">
+	<div class="nav_topics">
+	<a href="../../index.html"  id="basics">Основы</a>
+	 <a href="../../index.html?scrollTo=1750">Списки</a>
+	<a href="../../index.html?scrollTo=3000">Кортежи</a>
+	<a href="../../index.html?scrollTo=3750">Срезы</a>
+	<a href="../../index.html?scrollTo=4350">Словари</a>
+	<a href="../../index.html?scrollTo=5400">Множества</a>
+	<a href="../../index.html?scrollTo=6500">Условия</a>
+	<a href="../../index.html?scrollTo=7500">Циклы</a>
+	<a href="../../index.html?scrollTo=8450">Многомерность</a>
+	<a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+	<a href="../../index.html?scrollTo=9450">Время</a>
+	<a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+</div>
+</div>
+		<div class="wrapper">
+	
+			<main class="main-content">
+				<h1>Наличие множества в последовательности в Python</h1>
+				<div class="content">
+<p>
+	В Python есть возможность проверить,
+	входят ли элементы множества в какую-либо
+	последовательность - другое множество,
+	строку, список, кортеж. Сделать это можно
+	с помощью метода <code class="code inline">issubset</code>.
+	В его параметре задаем нужную последовательность.
+	Если множество входит в нее,
+	то возвращается булевое значение
+	<code class="code inline">True</code>, в противном случае -
+	<code class="code inline">False</code>.
+</p>
+<p>
+	Пусть у нас есть множество и список:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">st = {'a', 'b', 'c'}
+lst = ['a', 'b', 'c']</code>
+</div>
+<p>
+	Давайте проверим, входят ли
+	элементы множества в
+	список:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = st.issubset(lst)
+print(res) # выведет True</code>
+</div>
+<p>
+	А теперь давайте сравним элементы
+	двух множеств:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">st1 = {'1', '2', '3'}
+st2 = {'1', '2', '4'}
+
+res = st1.issubset(st2)
+print(res) # выведет False</code>
+</div>
+<p>
+	У метода <code class="code inline">issubset</code> также есть короткая форма.
+	Применяет она только при сравнении
+	двух множеств. Давайте перепишем предыдущий пример
+	с ее помощью:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = st1 &lt;= st2
+print(res) # выведет False</code>
+</div>
+<div class="task">
+	<p>
+		Даны множество и строка:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">st = {'1', '2', '3', '4', '5', '6'}
+txt = '123456'</code>
+	</div>
+	<p>
+		Проверьте, что все элементы
+		множества есть
+		в строке.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Даны множество и кортеж:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">st = {'ab', 'cd', 'ef'}
+tlp = ('ab', 'cd', 'ef')</code>
+	</div>
+	<p>
+		Проверьте, что все элементы
+		множества есть
+		в кортеже.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Даны два множества:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">st1 = {1, 2, 3, 4, 5}
+st2 = {1, 2, 3}</code>
+	</div>
+	<p>
+		Проверьте, что все элементы
+		второго множества есть
+		в первом множестве.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="sets12.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="sets14.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>			<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/sets/set-presence-sequence/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+</html>

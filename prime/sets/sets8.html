@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/sets/element-removing/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Удаление элемента из множества в Python</title>
+</head>
+
+	<body id="top">
+	<div class="navbar">
+	<div class="nav_topics">
+	<a href="../../index.html"  id="basics">Основы</a>
+	 <a href="../../index.html?scrollTo=1750">Списки</a>
+	<a href="../../index.html?scrollTo=3000">Кортежи</a>
+	<a href="../../index.html?scrollTo=3750">Срезы</a>
+	<a href="../../index.html?scrollTo=4350">Словари</a>
+	<a href="../../index.html?scrollTo=5400">Множества</a>
+	<a href="../../index.html?scrollTo=6500">Условия</a>
+	<a href="../../index.html?scrollTo=7500">Циклы</a>
+	<a href="../../index.html?scrollTo=8450">Многомерность</a>
+	<a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+	<a href="../../index.html?scrollTo=9450">Время</a>
+	<a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+</div>
+</div>
+		<div class="wrapper">
+		
+			<main class="main-content">
+				<h1>Удаление элемента из множества в Python</h1>
+				<div class="content">
+<p>
+	Чтобы удалить элемент из множества,
+	можно применить метод <code class="code inline">remove</code>.
+	В его параметр передаем нужный
+	элемент.
+</p>
+<p>
+	Пусть у нас есть множество:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">st = {'a', 'b', 'c'}</code>
+</div>
+<p>
+	Давайте удалим из него
+	элемент <code class="string inline">'a'</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">st.remove('a')
+print(st) # выведет {'b', 'c'}</code>
+</div>
+<p>
+	Если элемента, который нужно удалить,
+	нет в множестве, то вернется
+	ошибка:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">st.remove('d')
+print(st) # выведет ошибку</code>
+</div>
+<div class="task">
+	<p>
+		Дано множество:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">st = {1, 2, 3, 4, 5}</code>
+	</div>
+	<p>
+		Удалите из него элемент со
+		значением <code class="number inline">3</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">st = {'12', 1, '34', 2, '56'}
+st.remove('1')
+
+print(st)</code>
+	</div>
+	<p>
+		Скажите, что выведется в консоль.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">st = {1, 7, '2', 14, 5, 2}
+st.remove(2)
+
+print(st)</code>
+	</div>
+	<p>
+		Скажите, что выведется в консоль.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="sets7.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="sets9.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>				<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/sets/element-removing/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/sets/common-sets-elements/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Общие элементы нескольких множеств в Python</title>
+</head>
+
+	<body id="top">
+	<div class="navbar">
+	<div class="nav_topics">
+	<a href="../../index.html"  id="basics">Основы</a>
+	 <a href="../../index.html?scrollTo=1750">Списки</a>
+	<a href="../../index.html?scrollTo=3000">Кортежи</a>
+	<a href="../../index.html?scrollTo=3750">Срезы</a>
+	<a href="../../index.html?scrollTo=4350">Словари</a>
+	<a href="../../index.html?scrollTo=5400">Множества</a>
+	<a href="../../index.html?scrollTo=6500">Условия</a>
+	<a href="../../index.html?scrollTo=7500">Циклы</a>
+	<a href="../../index.html?scrollTo=8450">Многомерность</a>
+	<a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+	<a href="../../index.html?scrollTo=9450">Время</a>
+	<a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+</div>
+</div>
+		<div class="wrapper">
+			<main class="main-content">
+				<h1>Общие элементы нескольких множеств в Python</h1>
+				<div class="content">
+<p>
+	Чтобы найти <dfn>пересечение</dfn> нескольких множеств,
+	т.е. общие для них элементы, необходимо применить
+	метод <code class="code inline">intersection</code>.
+	В его параметр передаем множество,
+	с которым нужно узнать общие
+	элементы. Метод возвращает множество
+	общих элементов.
+</p>
+<p>
+	Пусть у нас есть два множества:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">st1 = {'a', 'b', 'c'}
+st2 = {'x', 'w', 'c', 'a'}</code>
+</div>
+<p>
+	Давайте выведем общие для
+	них элементы:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = st1.intersection(st2)
+print(res) # выведет {'c', 'a'}</code>
+</div>
+<p>
+	Есть также короткая форма записи этого метода.
+	Давайте перепишем предыдущий пример
+	в соответствии с ней:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = st1 & st2
+print(res) # выведет {'c', 'a'}</code>
+</div>
+<div class="task">
+	<p>
+		Даны два множества:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">st1 = {'12', '6', '2'}
+st2 = {'6', '10', '3', '2'}</code>
+	</div>
+	<p>
+		Получите их общие элементы.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Даны три множества:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">st1 = {1, 2, 3, 4}
+st2 = {1, 2, 4, 5}
+st3 = {1, 2, 5, 7}</code>
+	</div>
+	<p>
+		Получите множество общих
+		элементов трех этих множеств:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">{1, 2}</code>
+	</div>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="sets14.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="sets16.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>					<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/sets/common-sets-elements/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+</html>

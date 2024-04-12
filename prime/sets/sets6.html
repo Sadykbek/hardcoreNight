@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/sets/multiple-elements-adding/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Добавление нескольких элементов в множество в Python</title>
+</head>
+
+	<body id="top">
+	<div class="navbar">
+	<div class="nav_topics">
+	<a href="../../index.html"  id="basics">Основы</a>
+	 <a href="../../index.html?scrollTo=1750">Списки</a>
+	<a href="../../index.html?scrollTo=3000">Кортежи</a>
+	<a href="../../index.html?scrollTo=3750">Срезы</a>
+	<a href="../../index.html?scrollTo=4350">Словари</a>
+	<a href="../../index.html?scrollTo=5400">Множества</a>
+	<a href="../../index.html?scrollTo=6500">Условия</a>
+	<a href="../../index.html?scrollTo=7500">Циклы</a>
+	<a href="../../index.html?scrollTo=8450">Многомерность</a>
+	<a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+	<a href="../../index.html?scrollTo=9450">Время</a>
+	<a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+</div>
+</div>
+		<div class="wrapper">
+	
+			<main class="main-content">
+				<h1>Добавление нескольких элементов в множество в Python</h1>
+				<div class="content">
+<p>
+	С помощью метода <code class="code inline">add</code> можно
+	добавлять элементы в множество
+	по одному. Но, когда нужно
+	добавить сразу несколько
+	элементов, применяется метод
+	<code class="code inline">update</code>.
+</p>
+<p>
+	Пусть у нас есть множество:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">st = {'a', 'b', 'c', 'd'}</code>
+</div>
+<p>
+	Если передать в метод строку,
+	то она добавится к множеству как
+	список элементов. Давайте добавим
+	в множество строку <code class="string inline">'xyz'</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">st.update('xyz')
+print(st) # выведет {'z', 'y', 'd', 'c', 'x', 'a', 'b'}</code>
+</div>
+<p>
+	В параметре метода <code class="code inline">update</code>
+	можно задавать списки для
+	добавления в множество:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">st.update(['1', '2', '3'])
+print(st) # выведет {'1', 'b', 'a', 'd', 'c', '3', '2'}</code>
+</div>
+<p>
+	Элементы кортежей также можно добавить
+	в множество:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">st.update((1, 2, 3))
+print(st) # выведет {'a', 'c', 1, 2, 3, 'd', 'b'}</code>
+</div>
+<p>
+	А вот при передаче словарей
+	в множество добавятся только его
+	ключи:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">st.update({1: 'text1', 2: 'text2'})
+print(st) # выведет {1, 'd', 2, 'a', 'b', 'c'}</code>
+</div>
+<div class="task">
+	<p>
+		Дано множество:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">st = {'x', 'y', 'z', 'w'}</code>
+	</div>
+	<p>
+		Добавьте к нему строку <code class="string inline">'abxcz'</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дано множество:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">st = {1, 2, 3}</code>
+	</div>
+	<p>
+		Дан также список:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">lst = [3, 4, 5, 6]</code>
+	</div>
+	<p>
+		Добавьте элементы списка
+		в наше множество.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">st = {'12', '34', '56'}
+tlp = (2, 4, 6)
+
+st.update(tlp)
+print(st)</code>
+	</div>
+	<p>
+		Скажите, что выведется в консоль.
+	</p>
+</div>
+</div>		
+	</main>
+			<div class="bottom">
+	<section class="pages"><a href="sets5.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="sets7.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>				<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/sets/multiple-elements-adding/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+</html>
