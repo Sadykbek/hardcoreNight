@@ -63,6 +63,9 @@ main .menu div {
   /* justify-content: space-between; */
 }
 main .menu div a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Manrope", sans-serif;
   width: 32.33333333%;
   margin-left: .5%;
@@ -236,10 +239,16 @@ main h1{
 .menu {
   counter-reset: linkNumber; /* Инициализируем счетчик */
 }
+.menu a {
+  display: flex;
+  flex-direction: column; /* Располагаем элементы колоннообразно */
+  align-items: center; /* Выравнивание элементов по центру по горизонтали */
+  text-decoration: none
+}
 .menu a::before {
-  counter-increment: linkNumber; /* Увеличиваем значение счетчика */
-  content: counter(linkNumber) "."; /* Отображаем значение счетчика */
-  margin-left: 10px; /* Сдвигаем нумерацию влево */
+  content: counter(linkNumber) ".";
+  counter-increment: linkNumber; /* Увеличиваем счетчик для каждой ссылки */
+  margin-bottom: 5px;
 }
 .base a {
   display: block; /* Делаем ссылки блочными элементами для корректного отображения */

@@ -284,6 +284,19 @@
         if (scrollTo) {
             window.scrollTo(0, parseInt(scrollTo, 10));
         }
+
+        // Находим все ссылки внутри элементов с классом .menu
+   const links = document.querySelectorAll('.menu a');
+   
+   // Проходим по каждой ссылке
+   links.forEach(function(link) {
+     // Получаем текущее содержимое ссылки
+     const currentHtml = link.innerHTML;
+ 
+     // Оборачиваем содержимое ссылки в <span>
+     link.innerHTML = `<span>${currentHtml}</span>`;
+   });
+
       });
     </script>
 
