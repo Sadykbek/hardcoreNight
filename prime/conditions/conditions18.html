@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/ternary-operator/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/styles9890.css">
+   <title>Тернарный оператор в Python</title>
+</head>
+<body>
+   <div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=1750">Списки</a>
+      <a href="../../index.html?scrollTo=3000">Кортежи</a>
+      <a href="../../index.html?scrollTo=3750">Срезы</a>
+      <a href="../../index.html?scrollTo=4350">Словари</a>
+      <a href="../../index.html?scrollTo=5400">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=7500">Циклы</a>
+      <a href="../../index.html?scrollTo=8450">Многомерность</a>
+      <a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=9450">Время</a>
+      <a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+   </div>
+  </div>
+			<main class="main-content">
+				<h1>Тернарный оператор в Python</h1>
+				<div class="content">
+<p>
+	Пусть у нас есть две переменные:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst1 = 5
+tst2 = 10</code>
+</div>
+<p>
+	Давайте проверим какая из них больше
+	и выведем соответствующее
+	сообщение:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">if tst1 &gt; tst2:
+	print('+++')
+else:
+	print('---')</code>
+</div>
+<p>
+	Однако данное условие можно записать
+	в более коротком виде с помощью
+	<dfn>тернарного оператора</dfn>.
+</p>
+<p>
+	Его синтаксис выглядит так:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">'сообщение, если условие 1 истинно' if условие 1 else 'сообщение, если условие 1 ложно'</code>
+</div>
+<p>
+	Давайте перепишем условие с тернарным
+	оператором:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">print('+++' if tst1 &gt; tst2 else '---')</code>
+</div>
+<p class="notice">
+	Тернарный оператор следует применять только в
+	самых простых случаях, так как его использование
+	затрудняет понимание кода.
+</p>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = 12
+
+if tst &gt; 0:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+	<p>
+		Перепишите его с помощью тернарного оператора.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = 'abcde'
+
+if 'a' in tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+	<p>
+		Перепишите его с помощью тернарного оператора.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="conditions17.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="conditions19.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>		<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/ternary-operator/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+</html>

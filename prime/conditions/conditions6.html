@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/logical-and/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/styles9890.css">
+   <title>Логическое И в Python</title>
+</head>
+<body>
+   <div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=1750">Списки</a>
+      <a href="../../index.html?scrollTo=3000">Кортежи</a>
+      <a href="../../index.html?scrollTo=3750">Срезы</a>
+      <a href="../../index.html?scrollTo=4350">Словари</a>
+      <a href="../../index.html?scrollTo=5400">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=7500">Циклы</a>
+      <a href="../../index.html?scrollTo=8450">Многомерность</a>
+      <a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=9450">Время</a>
+      <a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+   </div>
+  </div>
+			<main class="main-content">
+				<h1>Логическое И в Python</h1>
+				<div class="content">
+<p>
+	Иногда может быть нужно составить
+	сложное условие. Для этого можно
+	использовать оператор <code class="code inline">and</code>
+	(логическое <code class="code inline">И</code>), который
+	задает одновременность
+	условий.
+</p>
+<p>
+	Пусть у нас есть переменная <code class="code inline">tst</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = 5</code>
+</div>
+<p>
+	Давайте проверим, больше ли она
+	нуля и <i>одновременно</i> меньше
+	<code class="number inline">10</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">if tst &gt; 0 and tst &lt; 10:
+	print('+++')
+else:
+	print('---')</code>
+</div>
+<p>
+	Условия могут налагаться не на одну переменную,
+	а на разные. Давайте создадим условие, которое
+	должно выполниться, если переменная <code class="code inline">tst1</code>
+	равна <code class="number inline">2</code> и одновременно если переменная
+	<code class="code inline">tst2</code> равна <code class="number inline">3</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst1 = 2
+tst2 = 3
+
+if tst1 == 2 and tst2 == 3:
+	print('+++')
+else:
+	print('---')</code>
+</div>
+<p>
+	В краткой форме оператор <code class="code inline">and</code>
+	можно заменить с помощью
+	<code class="code inline">&</code>. Давайте перепишем предыдущий
+	пример:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">if tst1 == 2 & tst2 == 3:
+	print('+++')
+else:
+	print('---')</code>
+</div>
+<div class="task">
+	<p>
+		Дана переменная:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = -3</code>
+	</div>
+	<p>
+		Проверьте, что она больше нуля и
+		меньше <code class="number inline">5</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана переменная:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = 21</code>
+	</div>
+	<p>
+		Проверьте, что она больше или равна
+		<code class="number inline">10</code> и меньше или равна
+		<code class="number inline">20</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Даны две переменные:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst1 = 6
+tst2 = 10</code>
+	</div>
+	<p>
+		Проверьте, что первая переменная меньше
+		<code class="number inline">8</code> и вторая - больше или равна
+		<code class="number inline">10</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Даны следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst1 = 'abcde'
+tst2 = list(tst1)
+
+if len(tst1) &gt;= 5 & len(tst2) &lt; 8:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+	<p>
+		Скажите, что выведется в консоль.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="conditions5.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="conditions7.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>		<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/logical-and/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+</html>

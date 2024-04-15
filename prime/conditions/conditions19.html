@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/object-type-checking/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/styles9890.css">
+   <title>Проверка типа объекта в Python</title>
+</head>
+<body>
+   <div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=1750">Списки</a>
+      <a href="../../index.html?scrollTo=3000">Кортежи</a>
+      <a href="../../index.html?scrollTo=3750">Срезы</a>
+      <a href="../../index.html?scrollTo=4350">Словари</a>
+      <a href="../../index.html?scrollTo=5400">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=7500">Циклы</a>
+      <a href="../../index.html?scrollTo=8450">Многомерность</a>
+      <a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=9450">Время</a>
+      <a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+   </div>
+  </div>
+			<main class="main-content">
+				<h1>Проверка типа объекта в Python</h1>
+				<div class="content">
+<p>
+	Чтобы проверить тип элемента, нужно
+	применить функцию <code class="code inline">isinstance</code>. Она
+	первым параметром принимает элемент,
+	а вторым - тип, на который он проверяется.
+	При этом в качестве названия для
+	второго параметра берутся
+	имена функций, преобразующие данные в соответствующий
+	тип: для строк - <code class="code inline">str</code>,
+	чисел - <code class="code inline">int</code>, списков -
+	<code class="code inline">list</code> и т.д. Функция <code class="code inline">isinstance</code>
+	возвращает булевые значения:
+	если элемент соответствует типу, то вернется
+	<code class="code inline">True</code>, в противном случае -
+	<code class="code inline">False</code>.
+</p>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Пусть у нас есть переменная
+	<code class="code inline">tst</code>. Давайте проверим,
+	является ли ее значение строкой. Для этого
+	справа от <code class="code inline">if</code> записываем функцию
+	<code class="code inline">isinstance</code>. В ее параметры
+	передаем <code class="code inline">tst</code> и тип <code class="code inline">str</code>.
+	Если значение и тип данных совпали,
+	то пусть выведется соответствующее
+	сообщение:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = 'a'
+if isinstance(tst, str):
+	print('string')</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">'string'</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Теперь давайте проверим,
+	является ли переменная целым
+	числом:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = 12
+if isinstance(tst, int):
+	print('integer')</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">'integer'</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Чтобы проверить, является ли <code class="code inline">tst</code>
+	числом с плавающей точкой, во
+	второй параметр <code class="code inline">isinstance</code> следует
+	передать тип <code class="code inline">float</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = 12.0
+if isinstance(tst, float):
+	print('float')</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">'float'</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Теперь давайте напишем условие,
+	чтобы проверить <code class="code inline">tst</code>
+	на список:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = [1, 2, 3]
+if isinstance(tst, list):
+	print('list')</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">'list'</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Давайте проверить, является ли переменная
+	кортежем:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = (1, 2, 3)
+if isinstance(tst, tuple):
+	print('tuple')</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">'tuple'</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Теперь зададим условие, чтобы узнать,
+	является ли значение переменной
+	словарем:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = {'a': 1, 'b': 2, 'c': 3}
+if isinstance(tst, dict):
+	print('dictionary')</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">'dictionary'</code>
+</div>
+
+<h2>Практические задачи</h2>
+<div class="task">
+	<p>
+		Пусть у вас есть переменная. Проверьте,
+		является ли ее значение целым числом.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Узнайте, является ли заданная переменная
+		числом с плавающей точкой.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Проверьте, содержит ли переменная
+		строчное значение.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Проверьте, является ли заданная переменная
+		словарем.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Проверьте, является ли заданная переменная
+		множеством.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Проверьте, является ли заданная переменная
+		кортежем.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Проверьте, является ли заданная переменная
+		списком.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="conditions18.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="conditions20.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>		<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/object-type-checking/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+</html>

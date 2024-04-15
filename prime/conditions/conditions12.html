@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/presence-checking/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/styles9890.css">
+   <title>Проверка наличия в Python</title>
+</head>
+<body>
+   <div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=1750">Списки</a>
+      <a href="../../index.html?scrollTo=3000">Кортежи</a>
+      <a href="../../index.html?scrollTo=3750">Срезы</a>
+      <a href="../../index.html?scrollTo=4350">Словари</a>
+      <a href="../../index.html?scrollTo=5400">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=7500">Циклы</a>
+      <a href="../../index.html?scrollTo=8450">Многомерность</a>
+      <a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=9450">Время</a>
+      <a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+   </div>
+  </div>
+			<main class="main-content">
+				<h1>Проверка наличия в Python</h1>
+				<div class="content">
+<p>
+	В условиях также можно проверить наличие
+	элемента. Для этого используется
+	оператор <code class="code inline">in</code>.
+</p>
+<p>
+	Пусть у нас есть переменная <code class="code inline">tst</code>
+	и список <code class="code inline">lst</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = 3
+lst = [1, 2, 3]</code>
+</div>
+<p>
+	Давайте проверим есть ли значение
+	переменной в списке:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">if tst in lst:
+	print('+++') # сработает это
+else:
+	print('---')</code>
+</div>
+<p>
+	С помощью конструкции <code class="code inline">not in</code>
+	можно проверить, отсутствует ли значение
+	переменной в списке:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">if tst not in lst:
+	print('+++')
+else:
+	print('---') # сработает это</code>
+</div>
+<div class="task">
+	<p>
+		Дана переменная и список:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = 'x'
+lst = ['x', 'y', 'z', 'w']</code>
+	</div>
+	<p>
+		Проверьте наличие переменной
+		в списке.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана переменная и множество:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = '1'
+st = {1, 2, 3, 4, 5}</code>
+	</div>
+	<p>
+		Проверьте, что переменной нет
+		в списке.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана переменная и строка:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = '3'
+txt = '123456'</code>
+	</div>
+	<p>
+		Проверьте наличие переменной
+		в строке.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = 3
+lst = ['a', 'b', 'c', 'd', 'e']
+res = lst[tst]
+tlp = ('a', 'b', 'c')
+
+if res in tlp:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+	<p>
+		Скажите, что выведется в консоль.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="conditions11.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="conditions13.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>		<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/presence-checking/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/match-case/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/styles9890.css">
+   <title>Конструкция match-case в Python</title>
+</head>
+<body>
+   <div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=1750">Списки</a>
+      <a href="../../index.html?scrollTo=3000">Кортежи</a>
+      <a href="../../index.html?scrollTo=3750">Срезы</a>
+      <a href="../../index.html?scrollTo=4350">Словари</a>
+      <a href="../../index.html?scrollTo=5400">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=7500">Циклы</a>
+      <a href="../../index.html?scrollTo=8450">Многомерность</a>
+      <a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=9450">Время</a>
+      <a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+   </div>
+  </div>
+			<main class="main-content">
+				<h1>Конструкция match-case в Python</h1>
+				<div class="content">
+<p>
+	В Python, начиная с версии <code class="number inline">3.10</code> есть
+	специальная конструкция <code class="code inline">match-case</code>,
+	которая используется для
+	выбора одного значения
+	из некоторого ряда значений.
+	Ее синтаксис:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">match переменная:
+	case 'значение1':
+		'''
+			здесь код, который выполнится в случае,
+			если переменная имеет значение1
+		'''
+	case 'значение2'
+		'''
+			здесь код, который выполнится в случае,
+			если переменная имеет значение2
+		'''
+	case _:
+		'''
+			здесь код, который выполнится в случае,
+			если значение ни с чем не совпало
+		'''</code>
+</div>
+<p>
+	Пусть у нас есть переменная <code class="code inline">tst</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = 'a'</code>
+</div>
+<p>
+	Давайте пропишем в условии разные
+	варианты, которые может принять
+	переменная:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">match tst:
+	case 'a':
+		print('a')
+	case 'b':
+		print('b')
+	case _:
+		print('tst is unknown')</code>
+</div>
+<p>
+	Также с помощью оператора <code class="code inline">|</code>
+	можно в каждом варианте задать
+	выборку нужных значений:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">match tst:
+	case 'a' | 'c':
+		print('a or c')
+	case 'b' | 'd':
+		print('b or d')
+	case _:
+		print('tst is unknown')</code>
+</div>
+<div class="task">
+	<p>
+		Пусть в переменной <code class="code inline">num</code> хранится одно
+		из чисел: <code class="number inline">1</code>, <code class="number inline">2</code>, <code class="number inline">3</code> или <code class="number inline">4</code>,
+		содержащее номер поры года. Выведите
+		название поры года, содержащееся
+		в числе.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Пусть в переменной <code class="code inline">num</code> хранится
+		номер месяца от <code class="number inline">1</code> до <code class="number inline">12</code>.
+		Выведите название поры года, соответствующее
+		этому месяцу.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Пусть в переменной <code class="code inline">tst</code> хранится
+		какой-либо тип данных. Напишите вариант, если
+		переменная является строкой. Если
+		она относится к целому числу или числу плавающей точкой,
+		то выведите одно сообщение <code class="string inline">'tst is number'</code>.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="conditions16.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="conditions18.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>		<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/match-case/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+</html>

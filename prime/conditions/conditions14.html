@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/booleans-shorted-if/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/styles9890.css">
+   <title>Сокращенный if в конструкции if-else</title>
+</head>
+<body>
+   <div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=1750">Списки</a>
+      <a href="../../index.html?scrollTo=3000">Кортежи</a>
+      <a href="../../index.html?scrollTo=3750">Срезы</a>
+      <a href="../../index.html?scrollTo=4350">Словари</a>
+      <a href="../../index.html?scrollTo=5400">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=7500">Циклы</a>
+      <a href="../../index.html?scrollTo=8450">Многомерность</a>
+      <a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=9450">Время</a>
+      <a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+   </div>
+  </div>
+			<main class="main-content">
+				<h1>Сокращенный if в конструкции if-else</h1>
+				<div class="content">
+<p>
+	Конструкцию <code class="code inline">if-else</code> допускается
+	применять в сокращенном виде,
+	если нам нужно проверить
+	истинная ли переменная. В широком смысле
+	это значит, равна ли переменная
+	булевому значению <code class="code inline">True</code>.
+	В краткой форме после <code class="code inline">if</code>
+	достаточно просто написать
+	имя переменной без каких-либо
+	условий для сравнения:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = True
+
+if tst:
+	print('+++') # сработает это
+else:
+	print('---')</code>
+</div>
+<p>
+	Также применять сокращенный
+	<code class="code inline">if</code> можно, когда переменная
+	имеет значения, <i>приравненные</i>
+	к булевым.
+</p>
+
+<h2>Значения, приравниваемые к False</h2>
+<ul>
+	<li><code class="code inline">None</code>;</li>
+	<li>целое число <code class="number inline">0</code>;</li>
+	<li>число с плавающей точкой <code class="number inline">0.0</code>;</li>
+	<li>пустая строка <code class="string inline">''</code>;</li>
+	<li>пустой список <code class="string inline">'[]'</code>;</li>
+	<li>пустой кортеж <code class="string inline">'()'</code>;</li>
+	<li>пустой словарь <code class="string inline">'{'}</code>;</li>
+	<li>пустое множество <code class="string inline">'set()'</code>.</li>
+</ul>
+<p>
+	Все остальные значения приравниваются
+	к <code class="code inline">True</code>.
+</p>
+<p>
+	Давайте проверим равна
+	ли переменная <code class="code inline">tst</code>
+	значению <code class="code inline">True</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = 5
+
+if tst:
+	print('+++') # сработает это
+else:
+	print('---')</code>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = []
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = None
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = -1
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = False
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = True
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = 'False'
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = '0'
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = ()
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = [0]
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = 1 - 1
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = {}
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = set()
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Расскажите, что будет результатом
+		выполнения данного кода:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = ''
+
+if tst:
+	print('+++')
+else:
+	print('---')</code>
+	</div>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="conditions13.html" class="prev"><span class="arrow">&larr;</span></a><a href="conditions15.html" class="next"><span class="arrow">&rarr;</span></a></section></div>		<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/booleans-shorted-if/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+</html>

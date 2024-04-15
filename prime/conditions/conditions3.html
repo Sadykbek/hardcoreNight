@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/less-more-operators/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/styles9890.css">
+   <title>Операторы больше и меньше в Python</title>
+</head>
+<body>
+   <div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=1750">Списки</a>
+      <a href="../../index.html?scrollTo=3000">Кортежи</a>
+      <a href="../../index.html?scrollTo=3750">Срезы</a>
+      <a href="../../index.html?scrollTo=4350">Словари</a>
+      <a href="../../index.html?scrollTo=5400">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=7500">Циклы</a>
+      <a href="../../index.html?scrollTo=8450">Многомерность</a>
+      <a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=9450">Время</a>
+      <a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+   </div>
+  </div>
+			<main class="main-content">
+				<h1>Операторы больше и меньше в Python</h1>
+				<div class="content">
+<p>
+	Для сравнения двух значений между
+	собой используются операторы
+	больше <code class="code inline">></code>, больше или равно <code class="code inline">>=</code>,
+	меньше <code class="code inline"><</code>, меньше или
+	равно <code class="code inline"><=</code>.
+</p>
+<p>
+	Пусть у нас есть переменная <code class="code inline">tst</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = 3</code>
+</div>
+<p>
+	Давайте узнаем больше ли нуля
+	значение этой переменной:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">if tst &gt; 0:
+	print('+++') # сработает это
+else:
+	print('---')</code>
+</div>
+<p>
+	Теперь давайте поменяем
+	значение переменной на
+	отрицательное:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = -3
+
+if tst &gt; 0:
+	print('+++')
+else:
+	print('---') # сработает это</code>
+</div>
+<p>
+	Пусть теперь значение
+	переменной равно <code class="number inline">0</code>.
+	В этом случае выполнится
+	блок <code class="code inline">else</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">tst = 0
+
+if tst &gt; 0:
+	print('+++')
+else:
+	print('---') # сработает это</code>
+</div>
+<p>
+	Давайте поменяем условие
+	на больше или равно:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">if tst &gt;= 0:
+	print('+++') # сработает это
+else:
+	print('---')</code>
+</div>
+<p>
+	Если поменять условие на меньше
+	или равно, то также сработает
+	первый блок:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">if tst &lt;= 0:
+	print('+++') # сработает это
+else:
+	print('---')</code>
+</div>
+<div class="task">
+	<p>
+		Дана переменная:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = 5</code>
+	</div>
+	<p>
+		Проверьте, что она больше <code class="number inline">10</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Проверьте, что переменная <code class="code inline">tst</code>
+		меньше <code class="number inline">10</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Проверьте, что переменная <code class="code inline">tst</code>
+		больше или равна <code class="number inline">5</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Проверьте, что переменная <code class="code inline">tst</code>
+		меньше или равна <code class="number inline">-5</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана переменная:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = 5</code>
+	</div>
+	<p>
+		Проверьте, что она больше <code class="number inline">10</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан следующий код:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">if age &gt;= 18:
+	print('You have access to the site')
+else:
+	print('Нou do not have access to the site')</code>
+	</div>
+	<p>
+		Задайте переменной <code class="code inline">age</code> число
+		с вашим возрастом. Скажите, что
+		вывелось в консоль.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="conditions2.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="conditions4.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>		<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/conditions/less-more-operators/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:24 GMT -->
+</html>
