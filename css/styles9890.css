@@ -310,3 +310,6 @@ display: flex;
   font-size: 21px;
   font-weight: 600;
 }
+.ref a{
+  margin-right: 20px;
+}
