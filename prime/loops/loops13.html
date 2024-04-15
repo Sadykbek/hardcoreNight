@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/loops/for/simultaneous-iteration/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href=" ../../css/styles9890.css">
+	<title>Одновременный перебор последовательностей в Python</title>
+ </head>
+	<body id="top">
+		<div class="navbar">
+			<div class="nav_topics">
+			<a href="../../index.html"  id="basics">Основы</a>
+			 <a href="../../index.html?scrollTo=1750">Списки</a>
+			<a href="../../index.html?scrollTo=3000">Кортежи</a>
+			<a href="../../index.html?scrollTo=3750">Срезы</a>
+			<a href="../../index.html?scrollTo=4350">Словари</a>
+			<a href="../../index.html?scrollTo=5400">Множества</a>
+			<a href="../../index.html?scrollTo=6500">Условия</a>
+			<a href="../../index.html?scrollTo=7500">Циклы</a>
+			<a href="../../index.html?scrollTo=8450">Многомерность</a>
+			<a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+			<a href="../../index.html?scrollTo=9450">Время</a>
+			<a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+		 </div>
+		 </div> 
+		<div class="wrapper">
+	
+			<main class="main-content">
+				<h1>Одновременный перебор последовательностей в Python</h1>
+				<div class="content">
+<p>
+	Чтобы перебрать сразу несколько
+	последовательностей, можно
+	применить функцию <code class="code inline">zip</code>.
+	При этом все элементы последовательностей
+	будут выводиться в виде
+	кортежей, состоящего из элементов
+	с одинаковым индексом.
+</p>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Пусть у нас есть два списка:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">lst1 = ['a', 'b', 'c']
+lst2 = [1, 2, 3]</code>
+</div>
+<p>
+	Давайте выведем попарно их элементы:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">for el in zip(lst1, lst2):
+	print(el)</code>
+</div>
+<p>
+	Результат выполненного кода:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">('a', 1)
+('b', 2)
+('c', 3)</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Перебирать можно и последовательности разного
+	типа. Давайте пропустим через цикл
+	и функцию <code class="code inline">zip</code> множество и
+	кортеж:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">st = {'a', 'b', 'c'}
+tlp = (1, 2, 3)
+
+for el in zip(st, tlp):
+	print(el)</code>
+</div>
+<p>
+	Результат выполненного кода:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">('a', 1)
+('b', 2)
+('c', 3)</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Если же длина одной последовательности больше
+	второй, то перебираться они будут
+	по элементам меньшей:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">lst1 = ['a', 'b', 'c', 'd', 'e']
+lst2 = [1, 2, 3, 4]
+
+for el in zip(lst1, lst2):
+	print(el)</code>
+</div>
+<p>
+	Результат выполненного кода:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">('a', 1)
+('b', 2)
+('c', 3)
+('d', 4)</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	С помощью функции <code class="code inline">zip</code> можно
+	перебрать и три последовательности.
+	Для этого в параметре
+	функции перечисляем их все
+	через запятую:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">lst1 = ['a1', 'b1', 'c1']
+lst2 = ['a2', 'b2', 'c2']
+lst3 = ['a3', 'b3', 'c3']
+
+for el in zip(lst1, lst2, lst3):
+	print(el)</code>
+</div>
+<p>
+	Результат выполненного кода:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">('a1', 'a2', 'a3')
+('b1', 'b2', 'b3')
+('c1', 'c2', 'c3')</code>
+</div>
+
+<h2>Практические задачи</h2>
+<div class="task">
+	<p>
+		Даны два списка:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst1 = [1, 3, 5]
+tst2 = [2, 4, 6]</code>
+	</div>
+	<p>
+		Выведите их элементы попарно
+		в виде кортежа.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Даны два списка:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst1 = ['a', 'b', 'c']
+tst2 = ['d', 'e', 'f']</code>
+	</div>
+	<p>
+		Получите из них следующий список:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">['a', '1', 'b', '2', 'c', '3']</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Даны три списка:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst1 = [11, 12, 13, 14]
+tst2 = [21, 22, 23, 24]
+tst3 = [31, 32, 33, 34]</code>
+	</div>
+	<p>
+		Сложите соответствующие
+		элементы этих списков и результат
+		запишите в новый список.
+		Суммирование будет идти по следующему
+		принципу:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">[
+	11 + 21 + 31,
+	12 + 22 + 32,
+	13 + 23 + 33,
+	14 + 24 + 34,
+]</code>
+	</div>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="loops12.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="loops14.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>				<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/loops/for/simultaneous-iteration/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+</html>
