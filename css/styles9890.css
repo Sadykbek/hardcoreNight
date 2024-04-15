@@ -313,3 +313,6 @@ display: flex;
 .ref a{
   margin-right: 20px;
 }
+.ref a:last-of-type{
+  margin-right: 0;
+}
