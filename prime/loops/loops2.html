@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/loops/for/result-loop-accumulation/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href=" ../../css/styles9890.css">
+	<title>Отработка изученного материала на работу со словарями в Python</title>
+ </head>
+	<body id="top">
+		<div class="navbar">
+			<div class="nav_topics">
+			<a href="../../index.html"  id="basics">Основы</a>
+			 <a href="../../index.html?scrollTo=1750">Списки</a>
+			<a href="../../index.html?scrollTo=3000">Кортежи</a>
+			<a href="../../index.html?scrollTo=3750">Срезы</a>
+			<a href="../../index.html?scrollTo=4350">Словари</a>
+			<a href="../../index.html?scrollTo=5400">Множества</a>
+			<a href="../../index.html?scrollTo=6500">Условия</a>
+			<a href="../../index.html?scrollTo=7500">Циклы</a>
+			<a href="../../index.html?scrollTo=8450">Многомерность</a>
+			<a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+			<a href="../../index.html?scrollTo=9450">Время</a>
+			<a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+		 </div>
+		 </div> 
+		<div class="wrapper">
+	
+			<main class="main-content">
+				<h1>Накопление результата в цикле for Python</h1>
+				<div class="content">
+<p>
+	Чтобы найти сумму всех элементов,
+	необходимо последовательно их
+	складывать в каждой итерации
+	цикла. А полученный результат следует
+	записать в отдельную переменную.
+</p>
+<p>
+	Пусть у нас есть список <code class="code inline">lst</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">lst = [1, 2, 3, 4, 5]</code>
+</div>
+<p>
+	Давайте найдем сумму его элементов.
+	Вначале объявим пустую переменную <code class="code inline">res</code>,
+	в которой будет последовательно накапливаться сумма
+	всех элементов. Далее в теле цикла
+	записываем прибавление к ней
+	каждого элемента:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = 0
+for el in lst:
+	res = res + el
+	
+print(res) # выведет 15</code>
+</div>
+<p>
+	Можно записать прибавление элемента
+	в более краткой форме, используя
+	специальный оператор <code class="code inline">+=</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res += el</code>
+</div>
+<p>
+	Накопление можно использовать и для
+	слияния элементов в одну строку.
+	Только в этом случае переменной
+	<code class="code inline">res</code> назначим не <code class="number inline">0</code>,
+	а пустую строку. В нее и будем
+	сливать все элементы списка:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">lst = ['1', '2', '3', '4', '5']
+
+res = ''
+for el in lst:
+	res += el
+	
+print(res) # выведет '12345'</code>
+</div>
+<div class="task">
+	<p>
+		Дан список:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = [1, 2, 3, 4, 5]</code>
+	</div>
+	<p>
+		Найдите сумму квадратов
+		элементов этого
+		списка.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан список:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = ['a', 'b', 'c', 'd', 'e']</code>
+	</div>
+	<p>
+		С помощью цикла соедините элементы
+		этого списка в строку:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">'abcde'</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Дан список:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = [1, 2, 3, 4, 5]</code>
+	</div>
+	<p>
+		С помощью цикла соедините элементы
+		этого списка в число:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">12345</code>
+	</div>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="loops1.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="loops3.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>				<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/loops/for/result-loop-accumulation/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+</html>
