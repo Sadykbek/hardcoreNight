@@ -303,6 +303,7 @@ display: flex;
 .main-content h1{
   font-size: 40px;
   letter-spacing: 0.06em;
+  word-spacing: 5px;
 }
 .code.inline{
   color: #526094;
