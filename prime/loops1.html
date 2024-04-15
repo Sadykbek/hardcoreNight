@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/loops/for/intro/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href=" ../../css/styles9890.css">
+	<title>Отработка изученного материала на работу со словарями в Python</title>
+ </head>
+	<body id="top">
+		<div class="navbar">
+			<div class="nav_topics">
+			<a href="../../index.html"  id="basics">Основы</a>
+			 <a href="../../index.html?scrollTo=1750">Списки</a>
+			<a href="../../index.html?scrollTo=3000">Кортежи</a>
+			<a href="../../index.html?scrollTo=3750">Срезы</a>
+			<a href="../../index.html?scrollTo=4350">Словари</a>
+			<a href="../../index.html?scrollTo=5400">Множества</a>
+			<a href="../../index.html?scrollTo=6500">Условия</a>
+			<a href="../../index.html?scrollTo=7500">Циклы</a>
+			<a href="../../index.html?scrollTo=8450">Многомерность</a>
+			<a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+			<a href="../../index.html?scrollTo=9450">Время</a>
+			<a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+		 </div>
+		 </div> 
+		<div class="wrapper">
+		
+			<main class="main-content">
+				<h1>Цикл for в Python</h1>
+				<div class="content">
+<p>
+	Циклы предназначены для многократного
+	выполнения одной и той же операции,
+	например, для перебора элементов
+	<dfn>итерируемых объектов</dfn>.
+	К таким объектам относятся
+	строки, кортежи, списки, множества
+	и словари.
+</p>
+<p>
+	В Python наиболее широко используется
+	цикл <code class="code inline">for</code>. Твой синтаксис
+	выглядит так:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">for элемент in итерируемый объект:
+	тело цикла</code>
+</div>
+<p>
+	В цикле <code class="code inline">for</code>, так же как и в
+	конструкции <code class="code inline">if-else</code>,
+	под блоком с условием необходимо сделать
+	один отступ для кода, располагающегося
+	ниже.
+</p>
+<p>
+	Пусть у нас есть список <code class="code inline">lst</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">lst = [1, 2, 3, 4, 5]</code>
+</div>
+<p>
+	Давайте с помощью цикла <code class="code inline">for</code>
+	переберем и выведем все его
+	элементы:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">lst = [1, 2, 3, 4, 5]
+
+for el in lst:
+	print(el) # выведет 1, 2... 5</code>
+</div>
+<p>
+	В теле цикла можно выполнять различные
+	операции с элементами. Давайте выведем
+	квадраты значений элементов:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">for el in lst:
+	print(el ** 2) # выведет 1, 4... 25</code>
+</div>
+<div class="task">
+	<p>
+		Дан список:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = ['1', '2', '3', '4', '5']</code>
+	</div>
+	<p>
+		Переберите его циклом и выведите
+		в консоль каждый элемент.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан кортеж:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = (1, 2, 3, 4, 5)</code>
+	</div>
+	<p>
+		Переберите его циклом и выведите
+		в консоль каждый элемент.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дано множество:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = {'a', 'b', 'c', 'd', 'e'}</code>
+	</div>
+	<p>
+		Переберите его циклом и выведите
+		в консоль каждый элемент.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = 'abcde'</code>
+	</div>
+	<p>
+		Переберите ее циклом и выведите
+		в консоль каждый символ.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дано число:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = 12345</code>
+	</div>
+	<p>
+		Переберите его циклом и выведите
+		в консоль каждую цифру.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан список:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">tst = [1, 2, 3, 4, 5]</code>
+	</div>
+	<p>
+		Прибавьте к его каждому элементу
+		число <code class="number inline">2</code> и выведите результат
+		в консоль.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="dictionaries20.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="loops2.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>			<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/loops/for/intro/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+</html>

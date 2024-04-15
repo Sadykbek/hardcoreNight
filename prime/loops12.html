@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/loops/for/numbers-step-generation/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href=" ../../css/styles9890.css">
+	<title>Отработка изученного материала на работу со словарями в Python</title>
+ </head>
+	<body id="top">
+		<div class="navbar">
+			<div class="nav_topics">
+			<a href="../../index.html"  id="basics">Основы</a>
+			 <a href="../../index.html?scrollTo=1750">Списки</a>
+			<a href="../../index.html?scrollTo=3000">Кортежи</a>
+			<a href="../../index.html?scrollTo=3750">Срезы</a>
+			<a href="../../index.html?scrollTo=4350">Словари</a>
+			<a href="../../index.html?scrollTo=5400">Множества</a>
+			<a href="../../index.html?scrollTo=6500">Условия</a>
+			<a href="../../index.html?scrollTo=7500">Циклы</a>
+			<a href="../../index.html?scrollTo=8450">Многомерность</a>
+			<a href="../../index.html?scrollTo=8850">Стандартные функции</a>
+			<a href="../../index.html?scrollTo=9450">Время</a>
+			<a href="../../index.html?scrollTo=10000">Пользовательские функции</a>
+		 </div>
+		 </div> 
+		<div class="wrapper">
+	
+			<main class="main-content">
+				<h1>Генерация чисел с шагом через for в Python</h1>
+				<div class="content">
+<p>
+	Чтобы вывести числа через определенный
+	шаг, в функцию <code class="code inline">range</code> нужно
+	передать третий параметр.
+</p>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Давайте выведем числа от <code class="number inline">1</code>
+	до <code class="number inline">9</code> с шагом <code class="number inline">2</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">for num in range(1, 10, 2):
+	print(num)</code>
+</div>
+<p>
+	Результат выполненного кода:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">1
+3
+5
+7
+9</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Если задать шаг с отрицательным числом,
+	то числа будут выводится в обратном порядке.
+	Давайте для наглядности поменяем местами
+	значения в первом и втором параметрах
+	функции:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">for num in range(10, 1, -1):
+	print(num)</code>
+</div>
+<p>
+	После выполнения кода выведутся
+	числа от <code class="number inline">10</code> до <code class="number inline">2</code>,
+	поскольку число во втором параметре
+	не включается в диапазон:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">10
+9
+8
+7
+6
+5
+4
+3
+2</code>
+</div>
+
+<h2>Практические задачи</h2>
+<div class="task">
+	<p>
+		Выведите в консоль четные числа
+		от <code class="number inline">1</code> до <code class="number inline">100</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Выведите в консоль числа
+		от <code class="number inline">-10</code> до <code class="number inline">10</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Напишите код, чтобы получить
+		следующие числа:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">20
+17
+14
+11
+8
+5
+2</code>
+	</div>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="loops11.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="loops13.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>			<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/loops/for/numbers-step-generation/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+</html>
