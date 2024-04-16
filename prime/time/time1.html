@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/time/dates/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Работа с датами в Python</title>
+</head>
+	<body id="top">
+		<div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=2150">Списки</a>
+      <a href="../../index.html?scrollTo=3570">Кортежи</a>
+      <a href="../../index.html?scrollTo=4470">Срезы</a>
+      <a href="../../index.html?scrollTo=5200">Словари</a>
+      <a href="../../index.html?scrollTo=6450">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=8900">Циклы</a>
+      <a href="../../index.html?scrollTo=10000">Многомерность</a>
+      <a href="../../index.html?scrollTo=10500">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=11260">Время</a>
+      <a href="../../index.html?scrollTo=12100">Пользовательские функции</a>
+   </div>
+  </div>
+		<div class="wrapper">
+			
+			<main class="main-content">
+				<h1>Работа с датами в Python</h1>
+				<div class="content">
+<p>
+	Для работы с датами в Python необходимо
+	импортировать соответствующие модули.
+	Делается это с помощью специальной
+	инструкции <code class="code inline">import</code>, после которой
+	пишется имя модуля. Импорт записывается
+	в самой верхней строке файла.
+</p>
+<p>
+	Давайте импортируем модуль <code class="code inline">datetime</code>
+	для основной работы
+	с датами:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">import datetime</code>
+</div>
+<p>
+	Чтобы вывести дату, к импортированному модулю
+	следует применить специальный метод <code class="code inline">date</code>.
+	В его параметрах задаются
+	<i>год, месяц, день</i>. Для удобства
+	полученную дату запишем в переменную
+	<code class="code inline">res</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = datetime.date(2025, 12, 31)
+print(res) # выведет 2025-12-31</code>
+</div>
+<p>
+	По сути теперь в переменной <code class="code inline">res</code>
+	хранится объект, содержащий дату.
+	Он полезен тем, что из него можно вывести более подробные
+	характеристики даты: день, месяц и год
+	и т.д. Для этого только следует
+	обратится к его свойствам - <code class="code inline">day</code>,
+	<code class="code inline">month</code>, <code class="code inline">year</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">print(res.day) # выведет 31
+print(res.month) # выведет 12
+print(res.year) # выведет 2025</code>
+</div>
+<div class="task">
+	<p>
+		Задайте переменной <code class="code inline">birthdate</code>
+		дату рождения пользователя.
+		Затем выведите ее в формате
+		<span class="format">год-месяц-день</span>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Модифицируйте предыдущую задачу так,
+		чтобы вывести только год рождения
+		пользователя.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Выведите из <code class="code inline">birthdate</code> день,
+		в который родился пользователь.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Выведите из <code class="code inline">birthdate</code> месяц
+		рождения пользователя.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="time2.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>			<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/time/dates/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+</html>

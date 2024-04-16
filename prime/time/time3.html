@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/time/weekday-getting/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Получение дня недели в Python</title>
+</head>
+	<body id="top">
+		<div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=2150">Списки</a>
+      <a href="../../index.html?scrollTo=3570">Кортежи</a>
+      <a href="../../index.html?scrollTo=4470">Срезы</a>
+      <a href="../../index.html?scrollTo=5200">Словари</a>
+      <a href="../../index.html?scrollTo=6450">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=8900">Циклы</a>
+      <a href="../../index.html?scrollTo=10000">Многомерность</a>
+      <a href="../../index.html?scrollTo=10500">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=11260">Время</a>
+      <a href="../../index.html?scrollTo=12100">Пользовательские функции</a>
+   </div>
+  </div>
+		<div class="wrapper">
+			
+			<main class="main-content">
+				<h1>Получение дня недели в Python</h1>
+				<div class="content">
+<p>
+	Для получения номера текущего дня недели
+	следует обратиться к свойству
+	<code class="code inline">weekday</code>. Оно возвращает числа от <code class="number inline">0</code> до <code class="number inline">6</code>-ти,
+	причем <i>неделя начинается с понедельника</i>
+	и этот день имеет номер <code class="number inline">0</code>. Вторник
+	- это день номер <code class="number inline">1</code>, среда - номер
+	<code class="number inline">2</code> и так далее.
+</p>
+<p>
+	Давайте выведем день недели,
+	на который выпадает дата
+	<code class="string inline">'2025-12-31'</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = datetime.date(2025, 12, 31)
+print(res.weekday()) # выведет 2</code>
+</div>
+<p>
+	Поскольку нумерация дней недели,
+	начиная с <code class="number inline">0</code> иногда может быть неудобной,
+	можно применить специальное свойство
+	<code class="code inline">isoweekday</code>. Оно выведет номер дня
+	при отсчете понедельника с <code class="number inline">1</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">print(res.weekday()) # выведет 2
+print(res.isoweekday()) # выведет 3</code>
+</div>
+<div class="task">
+	<p>
+		Выведите на экран номер текущего дня недели.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Определите, является ли текущий день недели
+		выходным или рабочим днем.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дата дата <code class="string inline">'2026-11-2'</code>. Выведите
+		ее день недели для двух случаев - при отсчете
+		понедельника с <code class="number inline">0</code> и при отсчете
+		с <code class="number inline">1</code>.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="time2.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="time4.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>				<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/time/weekday-getting/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:26 GMT -->
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/time/dates-difference/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Разность двух дат в Python</title>
+</head>
+	<body id="top">
+		<div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=2150">Списки</a>
+      <a href="../../index.html?scrollTo=3570">Кортежи</a>
+      <a href="../../index.html?scrollTo=4470">Срезы</a>
+      <a href="../../index.html?scrollTo=5200">Словари</a>
+      <a href="../../index.html?scrollTo=6450">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=8900">Циклы</a>
+      <a href="../../index.html?scrollTo=10000">Многомерность</a>
+      <a href="../../index.html?scrollTo=10500">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=11260">Время</a>
+      <a href="../../index.html?scrollTo=12100">Пользовательские функции</a>
+   </div>
+  </div>
+		<div class="wrapper">
+			
+			<main class="main-content">
+				<h1>Разность двух дат в Python</h1>
+				<div class="content">
+<p>
+	При работе с датами может потребоваться
+	определить разницу между ними.
+	Для этой цели в Python применяется
+	метод <code class="code inline">strptime</code> модуля
+	<code class="code inline">datetime</code>.
+</p>
+<p>
+	Давайте узнаем сколько времени
+	прошло между двумя датами:
+	<code class="string inline">'25/05/2020 02:35:5'</code> и
+	<code class="string inline">'15/06/2020 10:17:23'</code>. Для этого
+	сначала применим метод <code class="code inline">datetime</code>.
+	Затем воспользуемся методом <code class="code inline">strptime</code>,
+	в первый параметр которого передадим
+	нужную дату. А во втором параметре
+	укажем ее формат. Далее выведем
+	полученную разность на экран:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">start_time = datetime.datetime.strptime('25/05/2020 02:35:5', '%d/%m/%Y %H:%M:%S')
+end_time = datetime.datetime.strptime('15/06/2020 10:17:23', '%d/%m/%Y %H:%M:%S')
+
+res = end_time - start_time
+print(res) # выведет 21 days, 7:42:18</code>
+</div>
+<div class="task">
+	<p>
+		Даны две даты:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dt1 = '13/10/2018 22:15:45'
+dt2 = '15/11/2018 09:47:16'</code>
+	</div>
+	<p>
+		Определите сколько времени прошло
+		между ними.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Даны две даты:
+	</p>
+	<div class="block">
+		<code class="highlight" data-module="highlight" data-lang="python">dt1 = '01-12-2025 16:07:5'
+dt2 = '31:12:2025 10:32:45'</code>
+	</div>
+	<p>
+		Определите сколько времени прошло
+		между ними.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="time3.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="time5.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>			<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/time/dates-difference/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:26 GMT -->
+</html>

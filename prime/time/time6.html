@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/time/time-output/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Вывод времени в Python</title>
+</head>
+	<body id="top">
+		<div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=2150">Списки</a>
+      <a href="../../index.html?scrollTo=3570">Кортежи</a>
+      <a href="../../index.html?scrollTo=4470">Срезы</a>
+      <a href="../../index.html?scrollTo=5200">Словари</a>
+      <a href="../../index.html?scrollTo=6450">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=8900">Циклы</a>
+      <a href="../../index.html?scrollTo=10000">Многомерность</a>
+      <a href="../../index.html?scrollTo=10500">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=11260">Время</a>
+      <a href="../../index.html?scrollTo=12100">Пользовательские функции</a>
+   </div>
+  </div>
+		<div class="wrapper">
+			
+			<main class="main-content">
+				<h1>Вывод времени в Python</h1>
+				<div class="content">
+<p>
+	Для того, чтобы работать с временем,
+	нужно вывести его с помощью
+	метода <code class="code inline">time</code> модуля <code class="code inline">datetime</code>.
+	В параметры метода передаются
+	<span class="format">час, минуты, секунды</span>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = datetime.time(12, 59, 59)
+print(res.weekday()) # выведет 12:59:59</code>
+</div>
+<p>
+	При обращении к свойствам метода
+	<code class="code inline">time</code> можно получить также часы,
+	минуты и секунды:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">print(res.hour) # выведет 12
+print(res.minute) # выведет 59
+print(res.second) # выведет 59</code>
+</div>
+<p>
+	Чтобы получить полную текущую дату и время
+	в формате <span class="format">год-месяц-день час:минуты:секунды.миллисекунды</span>,
+	нужно последовательно применить методы
+	<code class="code inline">datetime</code> и <code class="code inline">now</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = datetime.datetime.now()
+print(res) # выведет текущую полную дату и время</code>
+</div>
+<p>
+	Также из данной полной даты можно вывести
+	ее отдельные показатели, обратившись
+	к соответствующим свойствам -
+	<code class="code inline">day</code>, <code class="code inline">month</code>, <code class="code inline">year</code>
+	и т.д.:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">print(res.day)
+print(res.month)
+print(res.year)
+print(res.hour)
+print(res.minute)
+print(res.second)</code>
+</div>
+<div class="task">
+	<p>
+		Выведите в консоль текущее время
+		в формате <span class="format">часы:минуты:секунды</span>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Выведите в консоль текущее время в формате
+		<span class="format">год-месяц-день часы:минуты:секунды</span>.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="time5.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="time7.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>			<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/time/time-output/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:26 GMT -->
+</html>
