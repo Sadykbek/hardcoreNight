@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/functions/nested/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Вложенные функции в Python</title>
+</head>
+
+	<body id="top">
+	<div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=2150">Списки</a>
+      <a href="../../index.html?scrollTo=3570">Кортежи</a>
+      <a href="../../index.html?scrollTo=4470">Срезы</a>
+      <a href="../../index.html?scrollTo=5200">Словари</a>
+      <a href="../../index.html?scrollTo=6450">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=8900">Циклы</a>
+      <a href="../../index.html?scrollTo=10000">Многомерность</a>
+      <a href="../../index.html?scrollTo=10500">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=11260">Время</a>
+      <a href="../../index.html?scrollTo=12100">Пользовательские функции</a>
+   </div>
+  </div>
+		<div class="wrapper">
+		
+			<main class="main-content">
+				<h1>Вложенные функции в Python</h1>
+				<div class="content">
+<p>
+	Для сокращения кода можно при вызове вкладывать
+	функции друг в друга.
+</p>
+<p>
+	Пусть у нас есть функции для возведения числа
+	в квадрат, в куб и для суммирования
+	двух чисел:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">def square(num):
+	return num ** 2 # возводит число в квадрат
+	
+def cube(num):
+	return num ** 3 # возводит число в куб
+	
+def add(num1, num2):
+	return num1 + num2 # выводит сумму чисел</code>
+</div>
+<p>
+	Чтобы получить сумму квадрата и куба
+	числа, мы можем вложить их в параметр
+	функции <code class="code inline">add</code> при ее вызове:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = add(square(2), cube(4))
+print(res) # выведет 68</code>
+</div>
+<p>
+	Кроме того, можно вызывать функции и
+	в теле другой функции. Давайте перепишем
+	предыдущий пример и вызовем
+	функции внутри <code class="code inline">add</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">def add(num1, num2):
+	return square(num1) + cube(num2)
+	
+res = add(2, 4)
+print(res) # выведет 68</code>
+</div>
+<div class="task">
+	<p>
+		Сделайте функцию, которая будет возводить
+		число в квадрат и функцию для получения
+		куба числа. Также с их помощью создайте функцию,
+		чтобы вывести на экран куб квадрата
+		числа.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Сделайте функцию, которая будет проверять
+		тип переменной и если переменная является
+		строкой, то выведет ее с заглавной буквы.
+		Также создайте функцию, которая будет
+		приветствовать пользователя по имени.
+		Вложите в нее первую функцию так, чтобы
+		имя всегда выводилось с заглавной
+		буквы.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="functions6.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="functions8.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>			<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/functions/nested/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:26 GMT -->
+</html>

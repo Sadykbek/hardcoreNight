@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/functions/return/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Списки в Python</title>
+</head>
+
+	<body id="top">
+	<div class="navbar">
+      <div class="nav_topics">
+      <a href="../../index.html"  id="basics">Основы</a>
+      <a href="../../index.html?scrollTo=2150">Списки</a>
+      <a href="../../index.html?scrollTo=3570">Кортежи</a>
+      <a href="../../index.html?scrollTo=4470">Срезы</a>
+      <a href="../../index.html?scrollTo=5200">Словари</a>
+      <a href="../../index.html?scrollTo=6450">Множества</a>
+      <a href="../../index.html?scrollTo=6500">Условия</a>
+      <a href="../../index.html?scrollTo=8900">Циклы</a>
+      <a href="../../index.html?scrollTo=10000">Многомерность</a>
+      <a href="../../index.html?scrollTo=10500">Стандартные функции</a>
+      <a href="../../index.html?scrollTo=11260">Время</a>
+      <a href="../../index.html?scrollTo=12100">Пользовательские функции</a>
+   </div>
+  </div>
+		<div class="wrapper">
+		
+			<main class="main-content">
+				<h1>Инструкция return в Python</h1>
+				<div class="content">
+<p>
+	Пусть у нас есть функция, которая выводит
+	на экран квадрат переданного числа:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">def func(num):
+	print(num ** 2)</code>
+</div>
+<p>
+	В случае, если выводить значение сразу
+	на экран не нужно, его можно
+	предварительно записать в
+	какую-нибудь переменную:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = func(3) # в переменной res теперь 9</code>
+</div>
+<p>
+	Для этого в Python существует специальная инструкция
+	<code class="code inline">return</code>, которая позволяет указать
+	значение, которое возвращает функция. Под
+	словом <dfn>возвращает</dfn> понимают то значение,
+	которое запишется в переменную, если ей присвоить
+	вызванную функцию.
+</p>
+<p>
+	Давайте перепишем нашу функцию так,
+	чтобы она не выводила результат в консоль,
+	а возвращала его в переменную:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">def func(num):
+	return num ** 2</code>
+</div>
+<p>
+	Теперь запишем результат
+	работы функции в
+	переменную:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = func(3)</code>
+</div>
+<p>
+	После того, как данные записаны в переменную,
+	их можно, например, вывести на экран:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = func(3)
+print(res) # выведет 9</code>
+</div>
+<p>
+	А можно сначала изменить эти данные,
+	а затем вывести их на экран:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = func(3)
+res = res + 1
+
+print(res) # выведет 10</code>
+</div>
+<p>
+	Можно сразу выполнять какие-то действия с
+	результатом работы функции перед записью
+	в переменную:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = func(3) + 1
+print(res) # выведет 10</code>
+</div>
+<p>
+	Можно вызвать нашу функцию несколько
+	раз для разных чисел и сложить
+	ее результаты:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">res = func(2) + func(3)
+print(res) # выведет 13</code>
+</div>
+<p>
+	Чтобы сократить написанный код,
+	можно сразу вызвать функцию,
+	передав ее в параметр
+	<code class="code inline">print</code>:
+</p>
+<div class="block">
+	<code class="highlight" data-module="highlight" data-lang="python">print(func(3))</code>
+</div>
+<div class="task">
+	<p>
+		Сделайте функцию, которая параметром принимает
+		число, а возвращает куб этого числа. С помощью
+		этой функции найдите куб числа <code class="number inline">3</code> и
+		запишите его в переменную <code class="code inline">res</code>.
+	</p>
+</div>
+<div class="task">
+	<p>
+		С помощью созданной вами функции найдите
+		сумму кубов числа <code class="number inline">2</code> и числа <code class="number inline">3</code>
+		и запишите ее в переменную <code class="code inline">res</code>.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"><a href="functions2.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="functions4.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>			<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/functions/return/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:26 GMT -->
+</html>
