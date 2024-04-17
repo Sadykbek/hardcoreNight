@@ -261,10 +261,11 @@ main h1{
 
 /*навигация*/
 .navbar {
+
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: 80%;
   margin: 0 auto; /* Центрирование панели */
   background-color: #6a6e7b; /* Цвет фона панели */
   border-radius: 5px;
@@ -272,12 +273,12 @@ main h1{
 
 .navbar a {
   color: white;
-  padding: 20px 10px;
+  padding: 15px 10px;
   text-decoration: none;
   text-align: center;
   font-family:  Helvetica, sans-serif;
   letter-spacing: 0.1em;
-  border-radius: 5px;
+  border-radius: 1px;
 }
 
 .navbar a:hover {
@@ -286,6 +287,9 @@ main h1{
 }
 .nav_topics{
 display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: center;
 }
 .task {
   position: relative; /* Делает .task относительно позиционированным контейнером */
@@ -316,3 +320,21 @@ display: flex;
 .ref a:last-of-type{
   margin-right: 0;
 }
+.back{
+  position: absolute;
+  left: 3vw;
+  top: 2.9vh;
+  border: none;
+  background-color: white;
+  padding: 0px 10px 8px 10px;
+  color: #777;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: scaleX(4) scaleY(3);
+}
+/* .back:hover{
+  background-color: #6767dF;
+  color: black;
+  padding: 8px 15px;
+  font-size: 18px;
+  font-weight: 900;
+} */

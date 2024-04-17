@@ -42,5 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
     hardcoreSpan.textContent = 'HARDCODENIGHT';
     task.prepend(hardcoreSpan); // Добавляем span как первый элемент в .task
   });
+
+  //назад в навигации
+
 });
 
+  function goBack() {
+    window.history.back();
+  }
