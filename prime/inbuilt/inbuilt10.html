@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/inbuilt/string/formating/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Словари в Python</title>
+</head>	<body id="top">
+		<div class="navbar">
+			<div class="nav_topics">
+			<a href="../../index.html"  id="basics">Основы</a>
+			<a href="../../index.html?scrollTo=2150">Списки</a>
+			<a href="../../index.html?scrollTo=3570">Кортежи</a>
+			<a href="../../index.html?scrollTo=4470">Срезы</a>
+			<a href="../../index.html?scrollTo=5200">Словари</a>
+			<a href="../../index.html?scrollTo=6450">Множества</a>
+			<a href="../../index.html?scrollTo=6500">Условия</a>
+			<a href="../../index.html?scrollTo=8900">Циклы</a>
+			<a href="../../index.html?scrollTo=10000">Многомерность</a>
+			<a href="../../index.html?scrollTo=10500">Стандартные функции</a>
+			<a href="../../index.html?scrollTo=11260">Время</a>
+			<a href="../../index.html?scrollTo=12100">Пользовательские функции</a>
+		 </div>
+		</div>
+		<div class="wrapper">
+	
+			<main class="main-content">				<h1>Форматирование строк в в Python</h1>
+				<div class="content">
+<div class="ref">
+	<a href="inbuilt10/strip.html" target="_blank"><code class="code inline">strip</code></a>
+	<a href="inbuilt10/lstrip.html" target="_blank"><code class="code inline">lstrip</code></a>
+	<a href="inbuilt10/rstrip.html" target="_blank"><code class="code inline">rstrip</code></a>
+	<a href="inbuilt10/format.html" target="_blank"><code class="code inline">format</code></a>
+	<a href="inbuilt10/zfill.html" target="_blank"><code class="code inline">zfill</code></a>
+	<a href="inbuilt10/ljust.html" target="_blank"><code class="code inline">ljust</code></a>
+	<a href="inbuilt10/rjust.html" target="_blank"><code class="code inline">rjust</code></a>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = 'a1bc11de'</code>
+	</div>
+	<p>
+		Удалите из строки все единицы,
+		чтобы получить следующий
+		результат:
+	</p>
+	<div class="block">
+		<code class="highlight"  >['a', 'b', 'c', 'd']</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Дана строка с концевыми пробелами:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = ' abcde '</code>
+	</div>
+	<p>
+		Удалите пробелы с ее концов:
+	</p>
+	<div class="block">
+		<code class="highlight"  >'abcde'</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Дана строка с концевыми пробелами:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = ' abcde '</code>
+	</div>
+	<p>
+		Удалите пробелы слева:
+	</p>
+	<div class="block">
+		<code class="highlight"  >'abcde '</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Дана строка с концевыми пробелами:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = ' abcde '</code>
+	</div>
+	<p>
+		Удалите пробелы справа:
+	</p>
+	<div class="block">
+		<code class="highlight"  >' abcde'</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Дана строка с концевыми пробелами:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = ' abcde '</code>
+	</div>
+	<p>
+		Удалите пробелы справа:
+	</p>
+	<div class="block">
+		<code class="highlight"  >' abcde'</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Даны строка и число:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = 'abc {}'
+num = 12</code>
+	</div>
+	<p>
+		Подставьте в строке вместо фигурных скобок
+		число.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Пусть у вас есть строчная переменная, в
+		которой после имени пользователя
+		идут фигурные скобки. Передайте
+		в них с помощью переменной <code class="code inline">age</code>
+		его возраст.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана пустая строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = ''</code>
+	</div>
+	<p>
+		Дана переменная:
+	</p>
+	<div class="block">
+		<code class="highlight"  >num = 6</code>
+	</div>
+	<p>
+		Запишите в строку столько
+		нулей, какое значение содержится
+		в нашей переменной:
+	</p>
+	<div class="block">
+		<code class="highlight"  >'000000'</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = 'abcde'</code>
+	</div>
+	<p>
+		Напишите код, чтобы получить следующий
+		результат:
+	</p>
+	<div class="block">
+		<code class="highlight"  >'abcde111'</code>
+	</div>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = '12345'</code>
+	</div>
+	<p>
+		Напишите код, чтобы получить следующий
+		результат:
+	</p>
+	<div class="block">
+		<code class="highlight"  >'aa12345'</code>
+	</div>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"     ><a href="inbuilt9.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="inbuilt11.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>			<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/inbuilt/string/formating/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+</html>

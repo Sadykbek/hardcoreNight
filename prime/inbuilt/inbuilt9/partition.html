@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/manual/string/partition/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Apr 2024 05:14:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../../css/styles9890.css">
+   <title>Словари в Python</title>
+</head>	<body id="top">
+		<div class="navbar">
+			<div class="nav_topics">
+			<a href="../../index.html"  id="basics">Основы</a>
+			<a href="../../index.html?scrollTo=2150">Списки</a>
+			<a href="../../index.html?scrollTo=3570">Кортежи</a>
+			<a href="../../index.html?scrollTo=4470">Срезы</a>
+			<a href="../../index.html?scrollTo=5200">Словари</a>
+			<a href="../../index.html?scrollTo=6450">Множества</a>
+			<a href="../../index.html?scrollTo=6500">Условия</a>
+			<a href="../../index.html?scrollTo=8900">Циклы</a>
+			<a href="../../index.html?scrollTo=10000">Многомерность</a>
+			<a href="../../index.html?scrollTo=10500">Стандартные функции</a>
+			<a href="../../index.html?scrollTo=11260">Время</a>
+			<a href="../../index.html?scrollTo=12100">Пользовательские функции</a>
+		 </div>
+		</div>
+		<div class="wrapper">
+	
+			<main class="main-content">				<h1>Метод partition</h1>
+				<div class="content">
+<p>
+	Метод <code class="code inline">partition</code> возвращает кортеж
+	из строки, разделенной по первому совпадению
+	подстроки и указанного
+	в параметре разделителя.
+</p>
+
+<h2>Синтаксис</h2>
+<div class="block">
+	<code class="highlight"  >строка.partition(разделитель)</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Давайте примененим метод <code class="code inline">partition</code> к
+	следующей строке:
+</p>
+<div class="block">
+	<code class="highlight"  >txt = 'abc_dea'
+print(txt.partition('_'))</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight"  >('abc', '_', 'dea')</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	А теперь добавим в нашу строку
+	дополнительный символ <code class="string inline">'_'</code>
+	и снова применим метод <code class="code inline">partition</code>:
+</p>
+<div class="block">
+	<code class="highlight"  >txt = 'ab_cd_ea'
+print(txt.partition('_'))</code>
+</div>
+<p>
+	Как видно из полученного результата,
+	метод разделил строку только
+	по первому совпадению символа <code class="string inline">'_'</code>:
+</p>
+<div class="block">
+	<code class="highlight"  >('ab', '_', 'cd_ea')</code>
+</div>
+
+
+</div>			</main>
+					</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/manual/string/partition/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Apr 2024 05:14:04 GMT -->
+</html>

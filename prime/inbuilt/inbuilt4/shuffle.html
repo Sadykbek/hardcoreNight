@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/manual/random/shuffle/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Apr 2024 05:14:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../../css/styles9890.css">
+   <title>Словари в Python</title>
+</head>	<body id="top">
+		<div class="navbar">
+			<div class="nav_topics">
+			<a href="../../index.html"  id="basics">Основы</a>
+			<a href="../../index.html?scrollTo=2150">Списки</a>
+			<a href="../../index.html?scrollTo=3570">Кортежи</a>
+			<a href="../../index.html?scrollTo=4470">Срезы</a>
+			<a href="../../index.html?scrollTo=5200">Словари</a>
+			<a href="../../index.html?scrollTo=6450">Множества</a>
+			<a href="../../index.html?scrollTo=6500">Условия</a>
+			<a href="../../index.html?scrollTo=8900">Циклы</a>
+			<a href="../../index.html?scrollTo=10000">Многомерность</a>
+			<a href="../../index.html?scrollTo=10500">Стандартные функции</a>
+			<a href="../../index.html?scrollTo=11260">Время</a>
+			<a href="../../index.html?scrollTo=12100">Пользовательские функции</a>
+		 </div>
+		</div>
+		<div class="wrapper">
+  
+			<main class="main-content">
+				<h1>Метод shuffle модуля random</h1>
+				<div class="content">
+<p>
+	Метод <code class="code inline">shuffle</code> модуля <code class="code inline">random</code>
+	перемешивает порядок элементов в изменяемой
+	последовательности. Поскольку кортеж является неизменяемой
+	последовательностью, а элементы в множестве неупорядочены,
+	выходит, что метод работает только со списком.
+	После выполнения метода исходный список
+	изменяется, а сам метод возвращает <code class="code inline">None</code>.
+	В параметре метода передаем нужный нам
+	список.
+</p>
+
+<h2>Синтаксис</h2>
+<div class="block">
+	<code class="highlight"  >import random
+
+random.shuffle(список)</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Давайте перемешаем элементы в списке:
+</p>
+<div class="block">
+	<code class="highlight"  >lst = [1, 2, 3, 4, 5]
+random.shuffle(lst)
+print(lst)</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight"  >[4, 3, 2, 1, 5]</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Теперь давайте попробуем перемешать элементы
+	кортежа:
+</p>
+<div class="block">
+	<code class="highlight"  >tpl = ('1', '2', '3', '4', '5')
+random.shuffle(tpl)
+print(tpl)</code>
+</div>
+<p>
+	Нам вернется следующая ошибка:
+</p>
+<div class="block">
+	<code class="highlight"  >File "C:\Python310\lib\random.py", line 394, in shuffle
+x[i], x[j] = x[j], x[i]
+TypeError: 'tuple' object does not support item assignment</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Давайте также попробуем перемешать элементы
+	множества:
+</p>
+<div class="block">
+	<code class="highlight"  >st = {'a', 'b', 'c', 'd'}
+random.shuffle(st)
+print(st)</code>
+</div>
+<p>
+	После выполнения кода мы получим следующую ошибку:
+</p>
+<div class="block">
+	<code class="highlight"  >File "C:\Python310\lib\random.py", line 394, in shuffle
+x[i], x[j] = x[j], x[i]
+TypeError: 'set' object is not subscriptable</code>
+</div>
+
+
+</div>			</main>
+					</div>
+		
+		<script src="../../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/manual/random/shuffle/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Apr 2024 05:14:04 GMT -->
+</html>

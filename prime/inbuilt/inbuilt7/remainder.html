@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/manual/math/remainder/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Apr 2024 05:14:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../../css/styles9890.css">
+   <title>Словари в Python</title>
+</head>	<body id="top">
+		<div class="navbar">
+			<div class="nav_topics">
+			<a href="../../index.html"  id="basics">Основы</a>
+			<a href="../../index.html?scrollTo=2150">Списки</a>
+			<a href="../../index.html?scrollTo=3570">Кортежи</a>
+			<a href="../../index.html?scrollTo=4470">Срезы</a>
+			<a href="../../index.html?scrollTo=5200">Словари</a>
+			<a href="../../index.html?scrollTo=6450">Множества</a>
+			<a href="../../index.html?scrollTo=6500">Условия</a>
+			<a href="../../index.html?scrollTo=8900">Циклы</a>
+			<a href="../../index.html?scrollTo=10000">Многомерность</a>
+			<a href="../../index.html?scrollTo=10500">Стандартные функции</a>
+			<a href="../../index.html?scrollTo=11260">Время</a>
+			<a href="../../index.html?scrollTo=12100">Пользовательские функции</a>
+		 </div>
+		</div>
+		<div class="wrapper">
+	
+			<main class="main-content">				<h1>Метод remainder модуля math</h1>
+				<div class="content">
+<p>
+	Метод <code class="code inline">remainder</code> модуля <code class="code inline">math</code>
+	возвращает остаток от деления одного числа на второе.
+	В первом параметре метода указываем число,
+	которое нужно разделить (делимое), во
+	втором параметре - число, на которое делим
+	первое (делитель). В отличие от оператора <code class="code inline">%</code>
+	метод всегда возвращает вещественное значение.
+</p>
+
+<h2>Синтаксис</h2>
+<div class="block">
+	<code class="highlight"  >import math
+
+math.remainder(делимое, делитель)</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Давайте найдем остаток от деления
+	числа <code class="number inline">25</code> на <code class="number inline">5</code>:
+</p>
+<div class="block">
+	<code class="highlight"  >import math
+
+print(math.remainder(25, 5))</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight"  >0.0</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	А теперь давайте получим остаток
+	от деления <code class="number inline">30</code> на <code class="number inline">4</code>:
+</p>
+<div class="block">
+	<code class="highlight"  >import math
+
+print(math.remainder(30, 4))</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight"  >-2.0</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Давайте узнаем остаток от деления
+	чисел <code class="number inline">10</code> и <code class="number inline">3</code>:
+</p>
+<div class="block">
+	<code class="highlight"  >import math
+
+print(math.remainder(10, 3))</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight"  >1.0</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	А теперь давайте попробуем узнать остаток от деления
+	чисел <code class="number inline">10</code> на <code class="number inline">0</code>:
+</p>
+<div class="block">
+	<code class="highlight"  >import math
+
+print(math.remainder(10, 0))</code>
+</div>
+<p>
+	После выполнения кода функция вернет нам ошибку:
+</p>
+<div class="block">
+	<code class="highlight"  >Traceback (most recent call last):
+	File "C:\python\file.py", line 3, in &lt;module&gt;
+		print(math.remainder(10, 0))
+				^^^^^^^^^^^^^^^^^^^^^
+ValueError: math domain error</code>
+</div>
+
+
+</div>			</main>
+					</div>
+		
+		<script src="../../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/manual/math/remainder/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Apr 2024 05:14:04 GMT -->
+</html>

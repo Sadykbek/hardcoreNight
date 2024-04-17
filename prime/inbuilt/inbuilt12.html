@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/book/prime/inbuilt/string/checking/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../css/styles9890.css">
+   <title>Словари в Python</title>
+</head>	<body id="top">
+		<div class="navbar">
+			<div class="nav_topics">
+			<a href="../../index.html"  id="basics">Основы</a>
+			<a href="../../index.html?scrollTo=2150">Списки</a>
+			<a href="../../index.html?scrollTo=3570">Кортежи</a>
+			<a href="../../index.html?scrollTo=4470">Срезы</a>
+			<a href="../../index.html?scrollTo=5200">Словари</a>
+			<a href="../../index.html?scrollTo=6450">Множества</a>
+			<a href="../../index.html?scrollTo=6500">Условия</a>
+			<a href="../../index.html?scrollTo=8900">Циклы</a>
+			<a href="../../index.html?scrollTo=10000">Многомерность</a>
+			<a href="../../index.html?scrollTo=10500">Стандартные функции</a>
+			<a href="../../index.html?scrollTo=11260">Время</a>
+			<a href="../../index.html?scrollTo=12100">Пользовательские функции</a>
+		 </div>
+		</div>
+		<div class="wrapper">
+	
+			<main class="main-content">				<h1>Проверка строки в Python</h1>
+				<div class="content">
+<div class="ref">
+	<a href="inbuilt12/istitle.html" target="_blank"><code class="code inline">istitle</code></a>
+	<a href="inbuilt12/isupper.html" target="_blank"><code class="code inline">isupper</code></a>
+	<a href="inbuilt12/islower.html" target="_blank"><code class="code inline">islower</code></a>
+	<a href="inbuilt12/isalpha.html" target="_blank"><code class="code inline">isalpha</code></a>
+	<a href="inbuilt12/isalnum.html" target="_blank"><code class="code inline">isalnum</code></a>
+	<a href="inbuilt12/isdigit.html" target="_blank"><code class="code inline">isdigit</code></a>
+	<a href="inbuilt12/isnumeric.html" target="_blank"><code class="code inline">isnumeric</code></a>
+	<a href="inbuilt12/isspace.html" target="_blank"><code class="code inline">isspace</code></a>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = 'Abcde'</code>
+	</div>
+	<p>
+		Проверьте, что она начинается с
+		заглавной буквы.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан список:
+	</p>
+	<div class="block">
+		<code class="highlight"  >lst = ['User1', 'User2', 'user3', 'User4']</code>
+	</div>
+	<p>
+		Проверьте, начинается ли каждый
+		его элемент с заглавной
+		буквы.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = 'ABCDE'</code>
+	</div>
+	<p>
+		Проверьте, что все ее буквы
+		находятся в верхнем
+		регистре.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = 'abcde'</code>
+	</div>
+	<p>
+		Проверьте, что все ее буквы
+		находятся в нижнем
+		регистре.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = 'abcde'</code>
+	</div>
+	<p>
+		Проверьте, что она состоит
+		только из букв.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = '12345'</code>
+	</div>
+	<p>
+		Проверьте, что она состоит
+		только из цифр.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = 'Ⅷ'</code>
+	</div>
+	<p>
+		Проверьте, что она состоит
+		только из цифр.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = '12345abc'</code>
+	</div>
+	<p>
+		Проверьте, что она состоит
+		только из букв и цифр.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = 'a1b2c3d '</code>
+	</div>
+	<p>
+		Проверьте, что она состоит
+		только из букв и цифр.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дана строка:
+	</p>
+	<div class="block">
+		<code class="highlight"  >txt = ' '</code>
+	</div>
+	<p>
+		Проверьте, состоит ли она
+		только из пробелов.
+	</p>
+</div>
+<div class="task">
+	<p>
+		Дан список:
+	</p>
+	<div class="block">
+		<code class="highlight"  >lst = ['a', 'b', ' ', 'c', '']</code>
+	</div>
+	<p>
+		Проверьте, есть ли в нем элементы,
+		содержащие только пробелы.
+	</p>
+</div>
+</div>			</main>
+			<div class="bottom">
+	<section class="pages"     ><a href="inbuilt11.html" target="_self" class="prev"><span class="arrow">&larr;</span></a><a href="time1.html" target="_self" class="next"><span class="arrow">&rarr;</span></a></section></div>			<div class="jump">
+	<a href="#top" class="to-top">&uarr;</a>
+</div>			<div class="langer">
+	</div>			</div>
+		</div>
+		
+		<script src="../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/book/prime/inbuilt/string/checking/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 06:30:25 GMT -->
+</html>

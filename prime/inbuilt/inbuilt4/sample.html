@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!-- Mirrored from code.mu/ru/python/manual/random/sample/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Apr 2024 05:14:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" ../../../css/styles9890.css">
+   <title>Словари в Python</title>
+</head>	<body id="top">
+		<div class="navbar">
+			<div class="nav_topics">
+			<a href="../../index.html"  id="basics">Основы</a>
+			<a href="../../index.html?scrollTo=2150">Списки</a>
+			<a href="../../index.html?scrollTo=3570">Кортежи</a>
+			<a href="../../index.html?scrollTo=4470">Срезы</a>
+			<a href="../../index.html?scrollTo=5200">Словари</a>
+			<a href="../../index.html?scrollTo=6450">Множества</a>
+			<a href="../../index.html?scrollTo=6500">Условия</a>
+			<a href="../../index.html?scrollTo=8900">Циклы</a>
+			<a href="../../index.html?scrollTo=10000">Многомерность</a>
+			<a href="../../index.html?scrollTo=10500">Стандартные функции</a>
+			<a href="../../index.html?scrollTo=11260">Время</a>
+			<a href="../../index.html?scrollTo=12100">Пользовательские функции</a>
+		 </div>
+		</div>
+		<div class="wrapper">
+  
+			<main class="main-content">
+				<h1>Метод sample модуля random</h1>
+				<div class="content">
+<p>
+	Метод <code class="code inline">sample</code> модуля <code class="code inline">random</code>
+	возвращает случайную выборку элементов
+	из последовательности. В первом параметре метода
+	указываем последовательность, во втором параметре -
+	количество элементов, которые мы хотим выбрать
+	случайным образом. 
+</p>
+<p>
+	В третьем необязательном именованном параметре <code class="code inline">k</code>
+	можем задать список элементов для повтора. Это позволяет
+	повысить вероятность выборки заданных элементов. Обратите
+	внимание на то, что третий параметр метода
+	добавлен только начиная с версии
+	Python <code class="number inline">3.9</code>.
+</p>
+
+<h2>Синтаксис</h2>
+<div class="block">
+	<code class="highlight"  >import random
+
+random.sample(последовательность, количество элементов, [k=повтор])</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Давайте получим случайные три
+	элемента из списка:
+</p>
+<div class="block">
+	<code class="highlight"  >lst = [1, 2, 3, 4, 5]
+print(random.sample(lst, 3))</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight"  >[2, 1, 5]</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Давайте также попробуем взять
+	выборку случайных элементов
+	из кортежа:
+</p>
+<div class="block">
+	<code class="highlight"  >tpl = (1, 2, 3, 4, 5)
+print(random.sample(tpl, 2))</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight"  >[3, 2]</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Также можно выбирать элементы
+	из последовательности,
+	которую генерирует функция
+	<code class="code inline">range</code>:
+</p>
+<div class="block">
+	<code class="highlight"  >print(random.sample(range(0, 10), 3))</code>
+</div>
+<p>
+	Результат выполнения кода:
+</p>
+<div class="block">
+	<code class="highlight"  >[0, 8, 9]</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Теперь давайте возьмем список и с помощью
+	параметра <code class="code inline">counts</code> назначим повторы
+	для каждого элемента из списка.
+	В нашем случае, пусть первый элемент
+	повторится два раза, второй - три,
+	а третий - четыре раза. Также необходимо
+	указать имя параметра <code class="code inline">k</code> для
+	вывода количества элементов:
+</p>
+<div class="block">
+	<code class="highlight"  >lst = [1, 2, 3]
+print(random.sample(lst, counts=[2, 3, 4], k=3))</code>
+</div>
+<p>
+	Данный код эквивалентен следующему:
+</p>
+<div class="block">
+	<code class="highlight"  >lst = [1, 1, 2, 2, 2, 3, 3, 3, 3] # фактически такой список
+print(random.sample(lst, 3))</code>
+</div>
+
+<h2>Пример <span class="-page-"></span></h2>
+<p>
+	Теперь давайте попробуем взять элементы
+	из множества:
+</p>
+<div class="block">
+	<code class="highlight"  >st = {1, 2, 3, 4, 5}
+print(random.sample(st, 2))</code>
+</div>
+<p>
+	Нам вернется следующая ошибка:
+</p>
+<div class="block">
+	<code class="highlight"  >[5, 2]
+DeprecationWarning: Sampling from a set deprecated
+since Python 3.9 and will be removed in a subsequent version.
+print(random.sample(st, 2))</code>
+</div>
+<p>
+	Это связано с тем, что с версии Python <code class="number inline">3.9</code>
+	не предусмотрена возможность брать выборку
+	из множества.
+</p>
+
+
+</div>			</main>
+					</div>
+		
+		<script src="../../../js/index.js"></script>	</body>
+
+<!-- Mirrored from code.mu/ru/python/manual/random/sample/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Apr 2024 05:14:04 GMT -->
+</html>
