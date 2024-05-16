@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navTopics = document.querySelector('.nav_topics');
+
+  mobileMenu.addEventListener('click', function() {
+    navTopics.classList.toggle('active');
+  });
   // Находим элемент с классом .highlight
   var highlightElements = document.querySelectorAll(".highlight");
 
